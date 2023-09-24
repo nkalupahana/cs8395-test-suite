@@ -8,5 +8,5 @@ def get_llm(llm_name):
         return OpenAI()
     elif llm_name == "openai-latest-1024":
         return OpenAI(max_tokens=1024)
-    else:
-        raise ValueError(f"LLM '{llm_name}' not found!")
+    
+    raise ValueError(f"LLM '{llm_name}' not found!")
