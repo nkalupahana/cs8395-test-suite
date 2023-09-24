@@ -65,4 +65,4 @@ prompt = PromptTemplate.from_template(raw_prompt)
 
 Using `PromptTemplate` allows for the use of variables in the prompt, while still allowing it to be stored as a string in the config file.
 
-Finally, test suites are required to create an `output.json` file when they're done. This file should, at a minimum, contain an `output` key with a score from 0 - 100. They can also contain subscores in additional keys.
+Finally, test suites are required to create an `output.json` file when they're done. This file should, at a minimum, contain an `output` key with a score from 0 - 100. They can also contain subscores in additional keys. Outputs are summarized on the command line, and written to `output.json` in the repo directory.

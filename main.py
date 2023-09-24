@@ -94,3 +94,12 @@ for tag, scores in score_by_tag.items():
     print(f"* {tag}")
     print(f"Projects that match tag: {len(scores)}")
     print(f"Average score: {statistics.mean(scores)}")
+
+output = {
+    "overall": statistics.mean(scores),
+    "by_tag": score_by_tag,
+    "by_project": outputs
+}
+
+with open("output.json", "w") as f:
+    f.write(json.dumps(output, indent=4))
