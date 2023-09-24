@@ -32,6 +32,8 @@ An example `.repos` file can be viewed at `sample.repos`.
 When test suite commands are run, they are passed a `--model` parameter, which contains the model they should use. They are also passed a `--relpath` parameter, which contains the relative path to this directory. This allows test suites to use `helpers`. Here is an example usage, which all test suites should implement some version of at a minimum:
 
 ```py
+import sys
+
 parser = argparse.ArgumentParser(description="Run test suite")
 parser.add_argument("--model", help="Model to run all test suites against", required=True)
 parser.add_argument("--relpath", help="Path to import helpers from", required=True)
