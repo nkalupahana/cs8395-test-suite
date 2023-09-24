@@ -1,12 +1,15 @@
-from shutil import which, rmtree
 import argparse
 import glob
 import itertools
 import os
+import statistics
 import subprocess
 import json
+
+from collections import defaultdict
 from inspect import getsourcefile
 from os.path import abspath
+from shutil import which, rmtree
 
 relpath = os.path.dirname(abspath(getsourcefile(lambda:0)))
 
@@ -19,21 +22,34 @@ if which("vcs") is None:
 parser = argparse.ArgumentParser(description="Run LLM test suites")
 parser.add_argument("--repos", help=".repos file to import", required=True)
 parser.add_argument("--model", help="Model to run all test suites against", required=False)
+parser.add_argument("--config-view", help="Without running tests, get config breakdown of all repos", required=False, action="store_true")
+parser.add_argument("--tags", help="Use repos that have one or more of these tags (space separated)", nargs="+", required=False)
 args = parser.parse_args()
 
 # Clone repos
 rmtree("repos", ignore_errors=True)
 os.mkdir("repos")
 subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
+print("----")
 
 # Run tests for each repo
 outputs = []
 for file in itertools.chain(glob.glob("repos/*/config.json")):
     directory = os.path.dirname(file)
-    print(f"* {directory}")
     data = json.loads(open(file).read())
+    print(f"* {data['name']}")
     if args.model is not None:
         data["model"] = args.model
+
+    if args.tags is not None:
+        if len(set(args.tags).intersection(set(data["tags"]))) == 0:
+            print("No tag match, skipped.")
+            continue
+
+    if args.config_view is True:
+        print(f"Default Model: {data['model']}")
+        print(f"Tags: {data['tags']}")
+        continue
 
     # Run scripts
     if "run_test" in data:
@@ -51,4 +67,30 @@ for file in itertools.chain(glob.glob("repos/*/config.json")):
     outputs.append(output)
 
 # Coalesce output
-print(outputs)
+if len(outputs) == 0:
+    print("No test output!")
+    exit()
+
+score_by_tag = defaultdict(list)
+scores = []
+print("\n** Score by project")
+for output in outputs:
+    print(f"* {output['name']}")
+    print(f"Overall score: {output['output']}")
+    scores.append(output["output"])
+    for tag in output["tags"]:
+        score_by_tag[tag].append(output["output"])
+    
+    items = list(output.items())
+    if len(items) > 3:
+        for item in items:
+            if item[0] == "output" or item[0] == "tags" or item[0] == "name":
+                continue
+            print(f"{item[0]}: {item[1]}")
+
+print(f"\nAveraged score: {statistics.mean(scores)}")
+print("\n** Score by tag")
+for tag, scores in score_by_tag.items():
+    print(f"* {tag}")
+    print(f"Projects that match tag: {len(scores)}")
+    print(f"Average score: {statistics.mean(scores)}")
