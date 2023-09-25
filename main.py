@@ -23,9 +23,9 @@ parser.add_argument("--tags", help="Use repos that have one or more of these tag
 args = parser.parse_args()
 
 # Clone repos
-#rmtree("repos", ignore_errors=True)
-#os.mkdir("repos")
-#subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
+rmtree("repos", ignore_errors=True)
+os.mkdir("repos")
+subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
 print("----")
 
 # Run tests for each repo
