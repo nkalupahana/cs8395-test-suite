@@ -11,7 +11,7 @@ from shutil import which, rmtree
 
 # Check for vcstool
 if which("vcs") is None:
-    print("Run pip install vcstool to install vcs!")
+    print("Run pip3 install . to install this package and its requirements!")
     exit(1)
 
 # Parse arguments
