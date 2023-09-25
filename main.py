@@ -7,11 +7,7 @@ import subprocess
 import json
 
 from collections import defaultdict
-from inspect import getsourcefile
-from os.path import abspath
 from shutil import which, rmtree
-
-relpath = os.path.dirname(abspath(getsourcefile(lambda:0)))
 
 # Check for vcstool
 if which("vcs") is None:
@@ -27,9 +23,9 @@ parser.add_argument("--tags", help="Use repos that have one or more of these tag
 args = parser.parse_args()
 
 # Clone repos
-rmtree("repos", ignore_errors=True)
-os.mkdir("repos")
-subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
+#rmtree("repos", ignore_errors=True)
+#os.mkdir("repos")
+#subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
 print("----")
 
 # Run tests for each repo
@@ -54,11 +50,11 @@ for file in itertools.chain(glob.glob("repos/*/config.json")):
     # Run scripts
     if "run_test" in data:
         print("Running test script!")
-        subprocess.Popen(f"{data['run_test']} --model {data['model']} --relpath {relpath}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
+        subprocess.Popen(f"{data['run_test']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
     
     if "run_score" in data:
         print("Running scoring script!")
-        subprocess.Popen(f"{data['run_score']} --model {data['model']} --relpath {relpath}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
+        subprocess.Popen(f"{data['run_score']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
 
     # Get test output
     output = json.loads(open(os.path.join(directory, "output.json")).read())
