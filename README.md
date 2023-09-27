@@ -25,7 +25,7 @@ options:
                         Use repos that have one or more of these tags (space separated)
 ```
 
-An example `.repos` file can be viewed at `sample.repos`.
+An example `.repos` file can be viewed at `sample.repos` (vcstool format).
 
 ## Test Suite Configuration
 
@@ -43,7 +43,7 @@ Test suites are also required to have a `config.json` file:
 ```json
 {
     "name": "name",
-    "model": "default model to run, see helpers for implemented options",
+    "model": "default model to run, see llm_test_helpers/__init__.py for implemented options",
     "run_test": "python3 generate_tests.py (optional)",
     "run_score": "bash check_coverage.bash (optional)",
     "tags": ["any", "tags", "here"],

@@ -31,7 +31,7 @@ with open(args.repos) as stream:
 for repo_name in repos["repositories"]:
     repo = repos["repositories"][repo_name]
     print(f"Cloning {repo_name}...")
-    subprocess.Popen(f"git clone {repo['url']} repos/{repo_name}", shell=True, stdout=subprocess.DEVNULL).wait()
+    subprocess.Popen(f"git clone {repo['url']} -b {repo['version']} repos/{repo_name}", shell=True, stdout=subprocess.DEVNULL).wait()
 
 # Run tests for each repo
 outputs = []
@@ -55,11 +55,19 @@ for file in itertools.chain(glob.glob("repos/*/config.json")):
     # Run scripts
     if "run_test" in data:
         print("Running test script!")
-        subprocess.Popen(f"{data['run_test']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
-    
+        p = subprocess.run(f"{data['run_test']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, capture_output=True)
+        if p.stderr:
+            print(str(p.stdout))
+            print("------")
+            print(str(p.stderr))
+
     if "run_score" in data:
         print("Running scoring script!")
-        subprocess.Popen(f"{data['run_score']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, stdout=subprocess.DEVNULL).wait()
+        p = subprocess.run(f"{data['run_score']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, capture_output=True)
+        if p.stderr:
+            print(p.stdout)
+            print("------")
+            print(p.stderr)
 
     # Get test output
     output = json.loads(open(os.path.join(directory, "output.json")).read())
