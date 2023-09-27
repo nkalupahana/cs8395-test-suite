@@ -5,14 +5,10 @@ import os
 import statistics
 import subprocess
 import json
+import yaml
 
 from collections import defaultdict
-from shutil import which, rmtree
-
-# Check for vcstool
-if which("vcs") is None:
-    print("Run pip3 install . to install this package and its requirements!")
-    exit(1)
+from shutil import rmtree
 
 # Parse arguments
 parser = argparse.ArgumentParser(description="Run LLM test suites")
@@ -25,8 +21,17 @@ args = parser.parse_args()
 # Clone repos
 rmtree("repos", ignore_errors=True)
 os.mkdir("repos")
-subprocess.Popen(f"vcs import --input {args.repos} repos", shell=True).wait()
-print("----")
+with open(args.repos) as stream:
+    try:
+        repos = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
+        exit(1)
+
+for repo_name in repos["repositories"]:
+    repo = repos["repositories"][repo_name]
+    print(f"Cloning {repo_name}...")
+    subprocess.Popen(f"git clone {repo['url']} repos/{repo_name}", shell=True, stdout=subprocess.DEVNULL).wait()
 
 # Run tests for each repo
 outputs = []

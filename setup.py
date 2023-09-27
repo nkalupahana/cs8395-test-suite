@@ -9,7 +9,7 @@ setup(
     author_email='nisala.a.kalupahana@vanderbilt.edu',
     license='AGPL-3.0',
     packages=['llm_test_helpers'],
-    install_requires=['langchain', 'openai', 'vcstool'],
+    install_requires=['langchain', 'openai', 'pyyaml'],
 
     classifiers=[]
 )
