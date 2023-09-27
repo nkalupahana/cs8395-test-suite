@@ -57,17 +57,17 @@ for file in itertools.chain(glob.glob("repos/*/config.json")):
         print("Running test script!")
         p = subprocess.run(f"{data['run_test']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, capture_output=True)
         if p.stderr:
-            print(str(p.stdout))
+            print(p.stdout.decode("utf-8"))
             print("------")
-            print(str(p.stderr))
+            print(p.stderr.decode("utf-8"))
 
     if "run_score" in data:
         print("Running scoring script!")
         p = subprocess.run(f"{data['run_score']} --model {data['model']}", cwd=os.path.dirname(file), shell=True, capture_output=True)
         if p.stderr:
-            print(p.stdout)
+            print(p.stdout.decode("utf-8"))
             print("------")
-            print(p.stderr)
+            print(p.stderr.decode("utf-8"))
 
     # Get test output
     output = json.loads(open(os.path.join(directory, "output.json")).read())
