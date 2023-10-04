@@ -7,3 +7,7 @@ repositories:
     type: git
     url: https://github.com/nkalupahana/cs8395-code-coverage.git
     version: demo
+  prompt:
+    type: git
+    url: https://github.com/murrlincoln/SWE-AI-Mini-Research.git
+    version: compatibility
