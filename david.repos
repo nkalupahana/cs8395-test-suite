@@ -1,0 +1,5 @@
+repositories:
+  david_test:
+    type: git
+    url: https://github.com/davidgaofc/cs_8395-generative_ai_coding_problems.git
+    version: main
