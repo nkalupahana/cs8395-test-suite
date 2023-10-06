@@ -1,0 +1,5 @@
+repositories:
+ memory:
+  type: git
+  url: https://github.com/mgrainger87/cs8395-memory-tests.git
+  version: main
