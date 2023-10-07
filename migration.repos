@@ -1,0 +1,5 @@
+repositories:
+  XiXiLeoTed:
+    type: git
+    url: https://github.com/TedFang-424/CS8395_Migration_2
+    version: main
