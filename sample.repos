@@ -1,9 +1,6 @@
 repositories:
-  code-coverage:
+  test:
     type: git
-    url: https://github.com/nkalupahana/cs8395-code-coverage.git
+    url: https://github.com/TedFang-424/CS8395-Test-.git
     version: main
-  demo:
-    type: git
-    url: https://github.com/nkalupahana/cs8395-code-coverage.git
-    version: demo
+
