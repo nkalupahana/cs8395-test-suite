@@ -1,0 +1,5 @@
+repositories:
+  vectorizing:
+    type: git
+    url: https://github.com/VamsiImmanneni/MiniResearchProject.git
+    version: main
