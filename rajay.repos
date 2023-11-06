@@ -1,0 +1,9 @@
+repositories:
+  logic:
+    type: git
+    url: https://github.com/RajayPreddie/LLMCodingBenchmarkingFramework.git
+    version: main
+  error:
+    type: git
+    url: https://github.com/RajayPreddie/cs8395-chatgpt-python-code-execution-comparison.git
+    version: main
