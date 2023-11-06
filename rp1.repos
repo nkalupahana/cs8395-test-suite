@@ -1,0 +1,5 @@
+repositories:
+  david_research_1:
+    type: git
+    url: https://github.com:davidgaofc/instruction-placement-experiments.git
+    version: main
