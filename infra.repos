@@ -1,0 +1,5 @@
+repositories:
+  cloud-infra:
+    type: git
+    url: https://github.com/nkalupahana/cs8395-cloud-gen.git
+    version: main
