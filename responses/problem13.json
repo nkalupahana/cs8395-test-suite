@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What gas do plants absorb during photosynthesis?",
+    "base_response": "Plants primarily absorb carbon dioxide (CO2) during photosynthesis.",
+    "variation_responses": {
+        "What gun do plants absorb during photosynthesis ?": "Plants do not absorb guns during photosynthesis. Photosynthesis is the process by which plants use sunlight, water, and carbon dioxide to produce glucose (a type of sugar) and oxygen.",
+        "Can you tell me: What gas do plants absorb during photosynthesis?": "Plants absorb carbon dioxide (CO2) gas during photosynthesis.",
+        "What gas do plants absorb during photosynthesis?": "Plants absorb carbon dioxide (CO2) during photosynthesis."
+    }
+}

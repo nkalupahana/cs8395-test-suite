@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the boiling point of water?",
+    "similarities": [
+        0.736842105263158,
+        0.7222222222222222,
+        0.4
+    ],
+    "mean_similarity": 0.6196881091617934,
+    "distances": [
+        67,
+        24,
+        250
+    ],
+    "mean_distance": 113.66666666666667
+}

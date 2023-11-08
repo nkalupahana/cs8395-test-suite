@@ -1,0 +1,9 @@
+{
+    "base_prompt": "Which animal is known as the King of the Jungle?",
+    "base_response": "The lion is often referred to as the King of the Jungle.",
+    "variation_responses": {
+        "Which brute is known as the King of the Jungle ?": "The King of the Jungle is typically known to be the lion, often referred to as the \"king of beasts.\"",
+        "Can you tell me: Which animal is known as the King of the Jungle?": "The lion is often referred to as the \"King of the Jungle.\"",
+        "Which animal is known as the King of the Jungle?": "The lion is often referred to as the King of the Jungle."
+    }
+}

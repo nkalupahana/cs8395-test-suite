@@ -1,0 +1,9 @@
+{
+    "base_prompt": "Who is the author of \"Pride and Prejudice\"?",
+    "base_response": "The author of \"Pride and Prejudice\" is Jane Austen.",
+    "variation_responses": {
+        "Who is the source of `` Pride and Prejudice '' ?": "The source of Pride and Prejudice is an 1813 novel written by Jane Austen.",
+        "Can you tell me: Who is the author of \"Pride and Prejudice\"?": "The author of \"Pride and Prejudice\" is Jane Austen.",
+        "Who is the author of \"Pride and Prejudice\"?": "The author of \"Pride and Prejudice\" is Jane Austen."
+    }
+}

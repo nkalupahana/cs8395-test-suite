@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the capital city of France?",
+    "similarities": [
+        1.0,
+        1.0,
+        0.14893617021276595
+    ],
+    "mean_similarity": 0.7163120567375887,
+    "distances": [
+        0,
+        0,
+        321
+    ],
+    "mean_distance": 107.0
+}

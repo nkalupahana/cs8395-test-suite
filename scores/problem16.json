@@ -1,0 +1,13 @@
+{
+    "prompt": "Who painted the Mona Lisa?",
+    "similarities": [
+        0.7777777777777778,
+        0.5833333333333333
+    ],
+    "mean_similarity": 0.6805555555555556,
+    "distances": [
+        29,
+        50
+    ],
+    "mean_distance": 39.5
+}

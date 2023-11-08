@@ -1,0 +1,15 @@
+{
+    "prompt": "How many continents are there on Earth?",
+    "similarities": [
+        0.375,
+        0.3157894736842105,
+        0.375
+    ],
+    "mean_similarity": 0.3552631578947369,
+    "distances": [
+        87,
+        113,
+        89
+    ],
+    "mean_distance": 96.33333333333333
+}

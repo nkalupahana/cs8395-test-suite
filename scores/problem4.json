@@ -1,0 +1,15 @@
+{
+    "prompt": "How many teeth does an adult human usually have?",
+    "similarities": [
+        0.37142857142857144,
+        0.36170212765957444,
+        0.631578947368421
+    ],
+    "mean_similarity": 0.4549032154855223,
+    "distances": [
+        131,
+        92,
+        64
+    ],
+    "mean_distance": 95.66666666666667
+}

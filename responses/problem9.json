@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the main ingredient in bread?",
+    "base_response": "The main ingredient in bread is flour, typically wheat flour.",
+    "variation_responses": {
+        "What is the primary ingredient in bread ?": "The primary ingredient in bread is flour, typically wheat flour.",
+        "Can you tell me what the main ingredient in bread?": "The main ingredient in bread is typically flour.",
+        "I'm curious about the main ingredient in bread?": "The main ingredient in bread is flour. Generally, wheat flour is used, but other grains like rye, barley, or corn can also be used to make different types of bread. Flour is made by grinding grains into a fine powder, which provides the foundation for the dough in bread-making."
+    }
+}

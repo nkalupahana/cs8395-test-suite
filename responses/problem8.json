@@ -1,0 +1,8 @@
+{
+    "base_prompt": "How long does it take for the Earth to orbit the Sun?",
+    "base_response": "The Earth takes approximately 365.25 days, or one year, to complete one orbit around the Sun.",
+    "variation_responses": {
+        "How long does it take for the Earth to orbit the Sun?": "The Earth takes approximately 365.25 days, or about 1 year, to complete one full orbit around the Sun.",
+        "Can you tell me: How long does it take for the Earth to orbit the Sun?": "The Earth takes approximately 365.25 days, or about 1 year, to complete one orbit around the Sun. However, to account for the extra quarter day, we have a leap year every four years with an additional day in February, making it 366 days."
+    }
+}

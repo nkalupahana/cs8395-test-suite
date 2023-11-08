@@ -1,0 +1,6 @@
+{
+    "name": "LLM Determinism",
+    "model": "chatgpt-latest",
+    "run_test": "python3 generate_prompts.py",
+    "run_score": "python3 run_score.py"
+}

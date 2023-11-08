@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the largest mammal in the world?",
+    "similarities": [
+        0.8888888888888888,
+        0.4736842105263158,
+        0.3870967741935484
+    ],
+    "mean_similarity": 0.5832232912029177,
+    "distances": [
+        66,
+        80,
+        304
+    ],
+    "mean_distance": 150.0
+}

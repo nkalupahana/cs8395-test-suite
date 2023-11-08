@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the boiling point of water?",
+    "base_response": "The boiling point of water at sea level is 100 degrees Celsius or 212 degrees Fahrenheit.",
+    "variation_responses": {
+        "What is the boiling full stop of water ?": "The boiling point of water is 100 degrees Celsius (212 degrees Fahrenheit) at sea level under standard atmospheric conditions.",
+        "Can you tell me what the boiling point of water?": "The boiling point of water at standard atmospheric pressure is 100 degrees Celsius or 212 degrees Fahrenheit.",
+        "I'm curious about the boiling point of water?": "The boiling point of water is 100 degrees Celsius (212 degrees Fahrenheit) at sea level when exposed to normal atmospheric pressure. However, the boiling point can change depending on the altitude and pressure. For instance, at higher altitudes where the atmospheric pressure is lower, the boiling point of water decreases."
+    }
+}

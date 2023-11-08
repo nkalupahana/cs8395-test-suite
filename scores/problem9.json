@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the main ingredient in bread?",
+    "similarities": [
+        0.8,
+        0.8888888888888888,
+        0.20512820512820518
+    ],
+    "mean_similarity": 0.6313390313390314,
+    "distances": [
+        5,
+        13,
+        220
+    ],
+    "mean_distance": 79.33333333333333
+}

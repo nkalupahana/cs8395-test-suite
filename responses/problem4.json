@@ -1,0 +1,9 @@
+{
+    "base_prompt": "How many teeth does an adult human usually have?",
+    "base_response": "An adult human typically has 32 teeth. This includes 8 incisors, 4 canines, 8 premolars, and 12 molars (including 4 wisdom teeth). However, not everyone develops wisdom teeth, so the total number of teeth can be less than 32 in some individuals.",
+    "variation_responses": {
+        "How many teeth does an adult man usually have ?": "An adult man usually has 32 teeth, including 8 incisors, 4 canines, 8 premolars, and 12 molars (including 4 wisdom teeth).",
+        "Can you tell me: How many teeth does an adult human usually have?": "An average adult human usually has 32 teeth, which includes 8 incisors, 4 canines, 8 premolars, and 12 molars (including 4 wisdom teeth). However, it's important to note that these numbers can vary slightly from person to person.",
+        "How many teeth does an adult human usually have?": "An adult human usually has 32 teeth, including 8 incisors, 4 canines, 8 premolars, and 12 molars (which includes 4 wisdom teeth). However, not everyone develops all 4 wisdom teeth, so the total number of teeth may vary."
+    }
+}

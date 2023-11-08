@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the hardest natural substance on Earth?",
+    "similarities": [
+        0.30612244897959184,
+        0.40816326530612246,
+        0.33333333333333337
+    ],
+    "mean_similarity": 0.34920634920634924,
+    "distances": [
+        136,
+        178,
+        155
+    ],
+    "mean_distance": 156.33333333333334
+}

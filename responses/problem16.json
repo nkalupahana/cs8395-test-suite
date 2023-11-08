@@ -1,0 +1,8 @@
+{
+    "base_prompt": "Who painted the Mona Lisa?",
+    "base_response": "Leonardo da Vinci painted the Mona Lisa.",
+    "variation_responses": {
+        "Who painted the Mona Lisa?": "The Mona Lisa was painted by Leonardo da Vinci.",
+        "Can you tell me: Who painted the Mona Lisa?": "The Mona Lisa was painted by the famous Italian artist Leonardo da Vinci."
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the chemical symbol for water?",
+    "base_response": "The chemical symbol for water is H2O.",
+    "variation_responses": {
+        "What is the chemical symbol for water ?": "The chemical symbol for water is H2O.",
+        "Can you tell me what the chemical symbol for water?": "The chemical symbol for water is H2O.",
+        "I'm curious about the chemical symbol for water?": "The chemical symbol for water is H2O."
+    }
+}

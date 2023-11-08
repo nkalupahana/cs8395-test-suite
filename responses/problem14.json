@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the tallest mountain on Earth?",
+    "base_response": "The tallest mountain on Earth is Mount Everest, located in the Himalayas on the border of Nepal and China. It has a peak that reaches approximately 8,848.86 meters (29,031.7 feet) above sea level.",
+    "variation_responses": {
+        "What is the tallest good deal on Earth ?": "The tallest known good deal on Earth is Mount Everest, which stands at approximately 29,032 feet (8,848 meters) above sea level.",
+        "Can you tell me what the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest, standing at approximately 8,848.86 meters (29,031.7 feet) above sea level.",
+        "I'm curious about the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest. It is located in the Himalayas and stands at an elevation of 8,848.86 meters (29,031.7 feet) above sea level. Mount Everest is a popular destination for mountaineers and has been the subject of many expeditions and incredible feats of human endurance."
+    }
+}

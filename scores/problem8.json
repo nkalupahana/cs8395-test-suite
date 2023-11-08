@@ -1,0 +1,13 @@
+{
+    "prompt": "How long does it take for the Earth to orbit the Sun?",
+    "similarities": [
+        0.8823529411764706,
+        0.41666666666666663
+    ],
+    "mean_similarity": 0.6495098039215685,
+    "distances": [
+        11,
+        146
+    ],
+    "mean_distance": 78.5
+}

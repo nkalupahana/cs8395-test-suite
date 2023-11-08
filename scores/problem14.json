@@ -1,0 +1,15 @@
+{
+    "prompt": "What is the tallest mountain on Earth?",
+    "similarities": [
+        0.39473684210526316,
+        0.5454545454545454,
+        0.5106382978723405
+    ],
+    "mean_similarity": 0.4836098951440497,
+    "distances": [
+        109,
+        75,
+        175
+    ],
+    "mean_distance": 119.66666666666667
+}

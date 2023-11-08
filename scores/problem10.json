@@ -1,0 +1,15 @@
+{
+    "prompt": "Which animal is known as the King of the Jungle?",
+    "similarities": [
+        0.7142857142857143,
+        1.0,
+        1.0
+    ],
+    "mean_similarity": 0.9047619047619048,
+    "distances": [
+        59,
+        2,
+        0
+    ],
+    "mean_distance": 20.333333333333332
+}

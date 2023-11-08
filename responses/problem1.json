@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the capital city of France?",
+    "base_response": "The capital city of France is Paris.",
+    "variation_responses": {
+        "What is the cap city of France ?": "The capital city of France is Paris.",
+        "Can you tell me what the capital city of France?": "The capital city of France is Paris.",
+        "I'm curious about the capital city of France?": "The capital city of France is Paris. It is located in the northern-central part of the country and is one of the most famous cities in the world. Paris is known for its iconic landmarks such as the Eiffel Tower, Louvre Museum, Notre-Dame Cathedral, and Champs-\u00c9lys\u00e9es. It is also a cultural hub with a rich history, vibrant arts scene, fashion, and cuisine."
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "prompt": "Who is the author of \"Pride and Prejudice\"?",
+    "similarities": [
+        0.5333333333333333,
+        1.0,
+        1.0
+    ],
+    "mean_similarity": 0.8444444444444444,
+    "distances": [
+        33,
+        0,
+        0
+    ],
+    "mean_distance": 11.0
+}

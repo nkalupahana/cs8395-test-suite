@@ -1,0 +1,9 @@
+{
+    "base_prompt": "What is the currency of Japan?",
+    "base_response": "The currency of Japan is the Japanese yen (JPY).",
+    "variation_responses": {
+        "What is the up-to-dateness of Japan ?": "As an AI language model, I don't have real-time data, but as of my last knowledge update, Japan is generally regarded as a highly developed and modern country. It is known for its advanced technology, efficient infrastructure, and innovation in various industries. Japan consistently strives to stay up-to-date with the latest trends and advancements, especially in areas such as robotics, electronics, automotive, and artificial intelligence. However, for the most accurate and up-to-date information, it is always recommended to refer to reliable sources or consult recent publications.",
+        "Can you tell me what the currency of Japan?": "The currency of Japan is the Japanese yen (JPY).",
+        "I'm curious about the currency of Japan?": "The currency of Japan is the Japanese Yen. The symbol for the Japanese Yen is \"\u00a5\" and the currency code is JPY. The Yen is issued and regulated by the Bank of Japan, which is the central bank of the country. The currency is used for daily transactions, both in cash and electronic forms, within Japan."
+    }
+}
