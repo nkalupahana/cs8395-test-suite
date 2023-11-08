@@ -1,0 +1,5 @@
+repositories:
+  halstead-difficulty:
+    type: git
+    url: https://github.com/zofialuther/CS8395-08-Mini-Research-1.git
+    version: main
