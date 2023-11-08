@@ -1,0 +1,5 @@
+repositories:
+  intermediate-representations:
+    type: git
+    url: https://github.com/zofialuther/CS8395-08-Paper1-updated.git
+    version: main
