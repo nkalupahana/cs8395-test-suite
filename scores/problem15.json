@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the currency of Japan?",
+    "prompt": "Design a SQL query to find the second highest salary from a table named 'Employees'.",
     "similarities": [
-        0.0847457627118644,
-        0.875,
-        0.20512820512820518
+        0.13157894736842102,
+        0.5531914893617021,
+        0.49122807017543857
     ],
-    "mean_similarity": 0.38829132261335647,
+    "mean_similarity": 0.39199950230185393,
     "distances": [
-        485,
-        4,
-        366
+        382,
+        139,
+        287
     ],
-    "mean_distance": 285.0
+    "mean_distance": 269.3333333333333
 }

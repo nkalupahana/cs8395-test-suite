@@ -1,9 +1,9 @@
 {
-    "base_prompt": "How many continents are there on Earth?",
-    "base_response": "There are seven continents on Earth.",
+    "base_prompt": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.",
+    "base_response": "SELECT DISTINCT status\nFROM Orders;",
     "variation_responses": {
-        "How many continents are there on Earth ?": "There are seven continents on Earth. These are Africa, Antarctica, Asia, Europe, North America, Oceania, and South America.",
-        "Can you tell me: How many continents are there on Earth?": "There are seven continents on Earth: Africa, Antarctica, Asia, Europe, North America, Australia (sometimes considered as Oceania), and South America.",
-        "How many continents are there on Earth?": "There are seven continents on Earth. They are: Africa, Antarctica, Asia, Europe, North America, Australia, and South America."
+        "Provide a SQL query to list all the unique values in a column named 'status ' from a defer called 'Orders ' .": "SELECT DISTINCT status\nFROM Orders",
+        "Can you tell me: Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.": "Certainly! Here's the SQL query to list all the unique values in the 'status' column from the 'Orders' table:\n\n```sql\nSELECT DISTINCT status FROM Orders;\n```\n\nThis query selects the distinct values from the 'status' column in the 'Orders' table. The DISTINCT keyword ensures that only unique values are returned, eliminating any duplicates.",
+        "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.": "SELECT DISTINCT status\nFROM Orders;"
     }
 }

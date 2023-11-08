@@ -2,7 +2,7 @@
     "prompts": [
         {
             "id": 1,
-            "base": "Explain the difference between a list and a tuple in Python."
+            "base": "Write a Python function to check if a number is prime."
         }
     ]
 }

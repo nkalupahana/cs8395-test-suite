@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the hardest natural substance on Earth?",
+    "prompt": "In Ruby, write a method to check whether a string is a palindrome.",
     "similarities": [
-        0.30612244897959184,
-        0.40816326530612246,
-        0.33333333333333337
+        0.2909090909090909,
+        0.3928571428571429,
+        0.38888888888888884
     ],
-    "mean_similarity": 0.34920634920634924,
+    "mean_similarity": 0.35755170755170756,
     "distances": [
-        136,
-        178,
-        155
+        488,
+        408,
+        437
     ],
-    "mean_distance": 156.33333333333334
+    "mean_distance": 444.3333333333333
 }

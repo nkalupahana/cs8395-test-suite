@@ -1,15 +1,15 @@
 {
-    "prompt": "Which animal is known as the King of the Jungle?",
+    "prompt": "Write a Python script to merge two sorted lists into a new sorted list.",
     "similarities": [
-        0.375,
-        0.375,
-        0.5384615384615384
+        0.5681818181818181,
+        0.641025641025641,
+        0.5789473684210527
     ],
-    "mean_similarity": 0.42948717948717946,
+    "mean_similarity": 0.596051609209504,
     "distances": [
-        55,
-        56,
-        42
+        151,
+        224,
+        194
     ],
-    "mean_distance": 51.0
+    "mean_distance": 189.66666666666666
 }

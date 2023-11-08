@@ -1,15 +1,15 @@
 {
-    "prompt": "How many continents are there on Earth?",
+    "prompt": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.",
     "similarities": [
-        0.375,
-        0.3157894736842105,
-        0.375
+        1.0,
+        0.1724137931034483,
+        1.0
     ],
-    "mean_similarity": 0.3552631578947369,
+    "mean_similarity": 0.7241379310344828,
     "distances": [
-        87,
-        113,
-        89
+        1,
+        306,
+        0
     ],
-    "mean_distance": 96.33333333333333
+    "mean_distance": 102.33333333333333
 }

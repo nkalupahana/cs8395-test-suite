@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the largest mammal in the world?",
+    "prompt": "Write a C++ program to convert a binary number to a decimal number.",
     "similarities": [
-        0.8888888888888888,
-        0.4736842105263158,
-        0.3870967741935484
+        0.7272727272727273,
+        0.6285714285714286,
+        0.7058823529411764
     ],
-    "mean_similarity": 0.5832232912029177,
+    "mean_similarity": 0.6872421695951108,
     "distances": [
-        66,
-        80,
-        304
+        117,
+        177,
+        174
     ],
-    "mean_distance": 150.0
+    "mean_distance": 156.0
 }

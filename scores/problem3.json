@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the boiling point of water?",
+    "prompt": "Create a Java method that finds the largest number in an array.",
     "similarities": [
-        0.736842105263158,
-        0.7222222222222222,
-        0.4
+        0.4,
+        0.4626865671641791,
+        0.4426229508196722
     ],
-    "mean_similarity": 0.6196881091617934,
+    "mean_similarity": 0.43510317266128373,
     "distances": [
-        67,
-        24,
-        250
+        425,
+        294,
+        252
     ],
-    "mean_distance": 113.66666666666667
+    "mean_distance": 323.6666666666667
 }

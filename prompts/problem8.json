@@ -1,7 +1,8 @@
 {
     "prompts": [
         {
-            "base": "How long does it take for the Earth to orbit the Sun?"
+            "id": 8,
+            "base": "Use PHP to count the number of times a specific value appears in an array."
         }
     ]
 }

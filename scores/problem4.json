@@ -1,15 +1,15 @@
 {
-    "prompt": "How many teeth does an adult human usually have?",
+    "prompt": "Demonstrate how to sort a dictionary by value in Python.",
     "similarities": [
-        0.37142857142857144,
-        0.36170212765957444,
-        0.631578947368421
+        0.4655172413793104,
+        0.30434782608695654,
+        0.4833333333333333
     ],
-    "mean_similarity": 0.4549032154855223,
+    "mean_similarity": 0.4177328002665334,
     "distances": [
-        131,
-        92,
-        64
+        167,
+        340,
+        186
     ],
-    "mean_distance": 95.66666666666667
+    "mean_distance": 231.0
 }

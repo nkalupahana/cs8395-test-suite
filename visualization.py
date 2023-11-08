@@ -1,46 +1,34 @@
-import matplotlib.pyplot as plt
-import json
 import os
-import numpy as np
+import json
+import matplotlib.pyplot as plt
 
-# Replace 'scores_directory' with your actual scores directory path
+# Path to the directory containing the score files
 scores_directory = 'scores'
-files = sorted([f for f in os.listdir(scores_directory) if f.endswith('.json')])
+mean_distances = []
 
-# Initialize lists to store the mean distances and problem numbers
-mean_levenshtein_distances = []
-problem_numbers = []
+# Iterate over each file in the scores directory
+for filename in os.listdir(scores_directory):
+    if filename.endswith('.json'):
+        # Construct the full file path
+        file_path = os.path.join(scores_directory, filename)
+        # Open and read the JSON file
+        with open(file_path, 'r') as json_file:
+            data = json.load(json_file)
+            # Extract the mean distance and add it to the list
+            if 'mean_distance' in data:
+                mean_distances.append(data['mean_distance'])
 
-# Read each JSON file and extract the mean Levenshtein distance
-for file in files:
-    with open(os.path.join(scores_directory, file), 'r') as json_file:
-        data = json.load(json_file)
-        if data['distances']:  # Check if there are distances recorded
-            mean_distance = np.mean(data['distances'])
-            mean_levenshtein_distances.append(mean_distance)
-            # Assuming the file name format "problem[number].json"
-            problem_number = int(file.replace("problem", "").replace(".json", ""))
-            problem_numbers.append(problem_number)
-
-# Sort the problem numbers and their corresponding distances
-sorted_indices = np.argsort(problem_numbers)
-sorted_problem_numbers = np.array(problem_numbers)[sorted_indices]
-sorted_distances = np.array(mean_levenshtein_distances)[sorted_indices]
-
-# Create a line chart
-plt.figure(figsize=(10, 5))
-plt.plot(sorted_problem_numbers, sorted_distances, marker='o', linestyle='-', color='b')
-
-# Adding labels and title
-plt.xlabel('Problems')
+# Create a boxplot of the mean distances
+plt.figure(figsize=(10, 6))
+plt.boxplot(mean_distances, vert=True, patch_artist=True) # Vert sets the boxplot orientation to vertical
+plt.title('Levenshtein Distance Boxplot')
 plt.ylabel('Mean Levenshtein Distance')
-plt.title('Mean Levenshtein Distance for Each Problem')
 
-# Save the figure
-output_image_path = 'mean_levenshtein_distance_chart.png'
-plt.savefig(output_image_path, bbox_inches='tight')
+# Add a custom x-axis label if necessary
+plt.xticks([1], ['Mean Levenshtein Distance'])
 
-# Display the plot
+image_path = 'leven_boxplot.png'
+plt.savefig(image_path, bbox_inches='tight')
+
+# Show the plot
 plt.show()
-
-print(f"The mean Levenshtein distance chart has been saved as an image here: {output_image_path}")

@@ -1,7 +1,8 @@
 {
     "prompts": [
         {
-            "base": "What is the tallest mountain on Earth?"
+            "id": 14,
+            "base": "Create a Rust program to calculate the greatest common divisor (GCD) of two numbers."
         }
     ]
 }

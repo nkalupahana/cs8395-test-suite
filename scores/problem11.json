@@ -1,15 +1,15 @@
 {
-    "prompt": "Who is the author of \"Pride and Prejudice\"?",
+    "prompt": "Develop a Swift function that returns the nth Fibonacci number.",
     "similarities": [
-        1.0,
-        1.0,
-        1.0
+        0.5333333333333333,
+        0.3571428571428571,
+        0.42553191489361697
     ],
-    "mean_similarity": 1.0,
+    "mean_similarity": 0.4386693684566025,
     "distances": [
-        0,
-        0,
-        0
+        207,
+        289,
+        280
     ],
-    "mean_distance": 0.0
+    "mean_distance": 258.6666666666667
 }

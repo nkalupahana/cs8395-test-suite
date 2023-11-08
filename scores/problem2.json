@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the chemical symbol for water?",
+    "prompt": "Implement a function in JavaScript to calculate the factorial of a number.",
     "similarities": [
-        1.0,
-        1.0,
-        1.0
+        0.3421052631578947,
+        0.34883720930232553,
+        0.2954545454545454
     ],
-    "mean_similarity": 1.0,
+    "mean_similarity": 0.32879900597158856,
     "distances": [
-        0,
-        0,
-        0
+        296,
+        332,
+        343
     ],
-    "mean_distance": 0.0
+    "mean_distance": 323.6666666666667
 }

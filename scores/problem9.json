@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the main ingredient in bread?",
+    "prompt": "Construct a regular expression in JavaScript that validates an email address.",
     "similarities": [
-        0.8,
-        0.8888888888888888,
-        0.20512820512820518
+        0.023809523809523836,
+        0.0,
+        0.0
     ],
-    "mean_similarity": 0.6313390313390314,
+    "mean_similarity": 0.007936507936507945,
     "distances": [
-        5,
-        13,
-        220
+        563,
+        583,
+        605
     ],
-    "mean_distance": 79.33333333333333
+    "mean_distance": 583.6666666666666
 }

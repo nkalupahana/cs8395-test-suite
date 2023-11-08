@@ -1,7 +1,8 @@
 {
     "prompts": [
         {
-            "base": "What is the currency of Japan?"
+            "id": 15,
+            "base": "Design a SQL query to find the second highest salary from a table named 'Employees'."
         }
     ]
 }

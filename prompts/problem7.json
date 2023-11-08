@@ -1,7 +1,8 @@
 {
     "prompts": [
         {
-            "base": "What is the hardest natural substance on Earth?"
+            "id": 7,
+            "base": "In Ruby, write a method to check whether a string is a palindrome."
         }
     ]
 }

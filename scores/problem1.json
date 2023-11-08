@@ -1,15 +1,15 @@
 {
-    "prompt": "Explain the difference between a list and a tuple in Python.",
+    "prompt": "Write a Python function to check if a number is prime.",
     "similarities": [
-        0.2857142857142857,
-        0.5411764705882354,
-        0.4787234042553191
+        0.5423728813559322,
+        0.5818181818181818,
+        0.5
     ],
-    "mean_similarity": 0.43520472018594675,
+    "mean_similarity": 0.541397021058038,
     "distances": [
-        480,
-        324,
-        399
+        401,
+        280,
+        298
     ],
-    "mean_distance": 401.0
+    "mean_distance": 326.3333333333333
 }

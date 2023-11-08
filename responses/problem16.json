@@ -1,8 +1,8 @@
 {
-    "base_prompt": "Who painted the Mona Lisa?",
-    "base_response": "The Mona Lisa was painted by Leonardo da Vinci.",
+    "base_prompt": "Write a Kotlin function that determines if a string is a valid IPv4 address.",
+    "base_response": "Here's an example of a Kotlin function that determines if a string is a valid IPv4 address:\n\n```kotlin\nfun isValidIPv4(ip: String): Boolean {\n    val parts = ip.split(\".\")\n    if (parts.size != 4) {\n        return false\n    }\n\n    for (part in parts) {\n        val num = part.toIntOrNull()\n        if (num == null || num !in 0..255) {\n            return false\n        }\n    }\n\n    return true\n}\n```\n\nThis function splits the string by \".\" and checks if it consists of exactly 4 parts. Then, it iterates over each part and verifies if the part can be parsed into an integer and is within the range of 0",
     "variation_responses": {
-        "Who painted the Mona Lisa?": "The Mona Lisa was painted by Leonardo da Vinci.",
-        "Can you tell me: Who painted the Mona Lisa?": "The Mona Lisa was painted by Leonardo da Vinci, an Italian artist, scientist, and polymath."
+        "Can you tell me: Write a Kotlin function that determines if a string is a valid IPv4 address.": "Sure! Here's a Kotlin function that determines if a string is a valid IPv4 address:\n\n```kotlin\nfun isValidIPv4Address(ipAddress: String): Boolean {\n    val parts = ipAddress.split(\".\")\n    \n    // Check if the IP address has 4 parts\n    if (parts.size != 4) {\n        return false\n    }\n    \n    // Check each part of the IP address\n    for (part in parts) {\n        // Check if each part is a number between 0 and 255\n        val num = part.toIntOrNull()\n        \n        // If the part is not a number or not between 0 and 255, return false\n        if (num == null || num < 0 || num",
+        "Write a Kotlin function that determines if a string is a valid IPv4 address.": "Here is a Kotlin function that determines if a string is a valid IPv4 address:\n\n```kotlin\nfun isValidIPv4Address(address: String): Boolean {\n    val parts = address.split('.')\n    \n    // Check if the address contains exactly 4 parts\n    if (parts.size != 4) {\n        return false\n    }\n    \n    // Check if each part is a valid number between 0 and 255\n    for (part in parts) {\n        val num = part.toIntOrNull()\n        if (num == null || num < 0 || num > 255) {\n            return false\n        }\n    }\n    \n    return true\n}\n```\n\nTo use this function, simply call `isValidIPv4Address` and"
     }
 }
