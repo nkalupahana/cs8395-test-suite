@@ -1,15 +1,15 @@
 {
     "prompt": "What gas do plants absorb during photosynthesis?",
     "similarities": [
-        0.2222222222222222,
-        0.7777777777777778,
-        0.875
+        0.6,
+        0.6666666666666667,
+        0.6666666666666667
     ],
-    "mean_similarity": 0.625,
+    "mean_similarity": 0.6444444444444445,
     "distances": [
-        143,
-        14,
-        10
+        17,
+        15,
+        15
     ],
-    "mean_distance": 55.666666666666664
+    "mean_distance": 15.666666666666666
 }

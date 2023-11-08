@@ -1,15 +1,15 @@
 {
-    "prompt": "What is the capital city of France?",
+    "prompt": "Explain the difference between a list and a tuple in Python.",
     "similarities": [
-        1.0,
-        1.0,
-        0.14893617021276595
+        0.2857142857142857,
+        0.5411764705882354,
+        0.4787234042553191
     ],
-    "mean_similarity": 0.7163120567375887,
+    "mean_similarity": 0.43520472018594675,
     "distances": [
-        0,
-        0,
-        321
+        480,
+        324,
+        399
     ],
-    "mean_distance": 107.0
+    "mean_distance": 401.0
 }

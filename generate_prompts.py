@@ -10,7 +10,8 @@ from nltk.corpus import wordnet
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 import Levenshtein
-openai_api_key = "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"
+openai_api_key = "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"
+
 
 def load_problems(directory):
     problems_data = []

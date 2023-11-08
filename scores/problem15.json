@@ -1,15 +1,15 @@
 {
     "prompt": "What is the currency of Japan?",
     "similarities": [
-        0.0547945205479452,
-        1.0,
-        0.2857142857142857
+        0.0847457627118644,
+        0.875,
+        0.20512820512820518
     ],
-    "mean_similarity": 0.446836268754077,
+    "mean_similarity": 0.38829132261335647,
     "distances": [
-        548,
-        0,
-        255
+        485,
+        4,
+        366
     ],
-    "mean_distance": 267.6666666666667
+    "mean_distance": 285.0
 }

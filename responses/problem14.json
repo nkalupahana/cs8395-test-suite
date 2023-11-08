@@ -1,9 +1,9 @@
 {
     "base_prompt": "What is the tallest mountain on Earth?",
-    "base_response": "The tallest mountain on Earth is Mount Everest, located in the Himalayas on the border of Nepal and China. It has a peak that reaches approximately 8,848.86 meters (29,031.7 feet) above sea level.",
+    "base_response": "The tallest mountain on Earth is Mount Everest. It is located in the Himalayas and stands at a height of 8,848.86 meters (29,031.7 feet) above sea level.",
     "variation_responses": {
-        "What is the tallest good deal on Earth ?": "The tallest known good deal on Earth is Mount Everest, which stands at approximately 29,032 feet (8,848 meters) above sea level.",
-        "Can you tell me what the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest, standing at approximately 8,848.86 meters (29,031.7 feet) above sea level.",
-        "I'm curious about the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest. It is located in the Himalayas and stands at an elevation of 8,848.86 meters (29,031.7 feet) above sea level. Mount Everest is a popular destination for mountaineers and has been the subject of many expeditions and incredible feats of human endurance."
+        "What is the tallest slew on Earth ?": "The tallest known slough (not slew) on Earth is Mount Everest, which stands at approximately 8,848 meters (29,029 feet) above sea level.",
+        "Can you tell me what the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest, located in the Himalayas on the border of Nepal and China (Tibet). It reaches an elevation of 8,848.86 meters (29,031.7 feet) above sea level.",
+        "I'm curious about the tallest mountain on Earth?": "The tallest mountain on Earth is Mount Everest, which stands at a majestic height of 8,848.86 meters (29,031.7 feet) above sea level. It is situated in the Mahalangur Himal sub-range of the Himalayas, on the border between Nepal and China (Tibet Autonomous Region).\n\nMount Everest is famously known for being the highest point on the planet and a major attraction for mountaineers and adventurers. It was first successfully summited by Sir Edmund Hillary of New Zealand and Tenzing Norgay Sherpa of Nepal on May 29, 1953. Since then, countless climbers have aspired to reach the summit, making it one of the most sought-after achievements in mountaineering."
     }
 }

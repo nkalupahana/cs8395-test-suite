@@ -2,8 +2,8 @@
     "base_prompt": "What language is primarily spoken in Brazil?",
     "base_response": "The primary language spoken in Brazil is Portuguese.",
     "variation_responses": {
-        "What voice communication is primarily spoken in Brazil ?": "The primary voice communication spoken in Brazil is Brazilian Portuguese.",
-        "Can you tell me: What language is primarily spoken in Brazil?": "The language primarily spoken in Brazil is Portuguese.",
-        "What language is primarily spoken in Brazil?": "The language primarily spoken in Brazil is Portuguese."
+        "What spoken communication is primarily spoken in Brazil ?": "The official language of Brazil is Portuguese, so the primary spoken communication in Brazil is Portuguese.",
+        "Can you tell me: What language is primarily spoken in Brazil?": "The primary language spoken in Brazil is Portuguese.",
+        "What language is primarily spoken in Brazil?": "The primary language spoken in Brazil is Portuguese."
     }
 }

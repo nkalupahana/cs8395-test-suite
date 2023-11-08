@@ -1,15 +1,15 @@
 {
     "prompt": "What language is primarily spoken in Brazil?",
     "similarities": [
-        0.6363636363636364,
-        0.7777777777777778,
-        0.7777777777777778
+        0.6666666666666667,
+        1.0,
+        1.0
     ],
-    "mean_similarity": 0.7306397306397306,
+    "mean_similarity": 0.888888888888889,
     "distances": [
-        27,
-        16,
-        16
+        61,
+        0,
+        0
     ],
-    "mean_distance": 19.666666666666668
+    "mean_distance": 20.333333333333332
 }
