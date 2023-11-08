@@ -1,4 +1,4 @@
-# LLM Prompt Variation Analysis Framework
+# LLM Prompt Variation and Determinism Analysis Framework
 
 This framework is designed to evaluate the consistency of a Large Language Model's (LLM) responses to various prompt variations. It includes scripts for generating prompt variations, invoking the LLM to get responses, and analyzing these responses to measure similarity and distance metrics. Generated with ChatGPT.
 
