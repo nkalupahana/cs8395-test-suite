@@ -1,0 +1,13 @@
+repositories:
+  chat-gpt-logic-error-test:
+    type: git
+    url: https://github.com/RajayPreddie/LLMCodingBenchmarkingFramework.git
+    version: main
+  chat-gpt-code-error-finder:
+    type: git
+    url: https://github.com/RajayPreddie/cs8395-chatgpt-python-code-execution-comparison.git
+    version: main
+  chat-gpt-code-style:
+    type: git
+    url: https://github.com/RajayPreddie/cs8395-test-chat-gpt-coding-style
+    version: main
