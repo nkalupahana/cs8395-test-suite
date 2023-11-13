@@ -1,9 +1,19 @@
 {
     "base_prompt": "In Ruby, write a method to check whether a string is a palindrome.",
-    "base_response": "Here is an example of a method in Ruby to check whether a string is a palindrome:\n\n```ruby\ndef palindrome?(str)\n  str.downcase == str.downcase.reverse\nend\n\n# Examples:\nputs palindrome?('racecar') # true\nputs palindrome?('level') # true\nputs palindrome?('hello') # false\n```",
+    "base_response": "Here's an example of a method in Ruby that checks whether a given string is a palindrome:",
+    "base_code": "ruby\ndef palindrome?(str)\n  # Remove any non-alphanumeric characters and convert string to lowercase\n  formatted_str = str.gsub(/\\W/, '').downcase\n  # Compare the formatted string with its reverse\n  formatted_str == formatted_str.reverse\nend",
     "variation_responses": {
-        "In Ruby , write a method to check whether a string is a palindrome .": "Here is the method to check whether a string is a palindrome in Ruby:\n\n```ruby\ndef palindrome?(string)\n  # Remove any non-alphanumeric characters and convert the string to lowercase\n  stripped_string = string.gsub(/[^0-9a-z]/i, '').downcase\n\n  # Check if the stripped string is equal to its reverse\n  stripped_string == stripped_string.reverse\nend\n```\n\nThe `palindrome?` method takes a string as a parameter and returns `true` if the string is a palindrome (reads the same forwards and backwards), and `false` otherwise.\n\nTo determine if a string is a palindrome, the method first removes any non-alphanumeric characters from the string using the `gsub` method and the",
-        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": "Sure! Here's an example of a method in Ruby to check whether a string is a palindrome:\n\n```ruby\ndef palindrome?(string)\n  # Remove whitespaces and convert to lowercase\n  clean_string = string.downcase.gsub(/\\s+/, \"\")\n  \n  # Check if the reversed string is equal to the original string\n  clean_string == clean_string.reverse\nend\n```\nTo use this method, you can call it and pass a string as an argument. For example:\n\n```ruby\nputs palindrome?(\"racecar\")\n# Output: true\n\nputs palindrome?(\"hello\")\n# Output: false\n```\nIn the above code, we first remove any whitespaces and convert the string to lowercase using the `gsub` method. Then we check",
-        "In Ruby, write a method to check whether a string is a palindrome.": "Sure! Here's an example method to check whether a string is a palindrome in Ruby:\n\n```ruby\ndef palindrome?(string)\n  # Remove any non-alphanumeric characters from the string and lowercase it\n  clean_string = string.downcase.gsub(/\\W/, '')\n\n  # Check if the string is equal to its reverse\n  clean_string == clean_string.reverse\nend\n\n# Test examples\nputs palindrome?(\"Deified\")  #=> true\nputs palindrome?(\"No lemon, no melon\")  #=> true\nputs palindrome?(\"Hello, world!\")  #=> false\n```\n\nThis method first removes any non-alphanumeric characters from the string and converts it to lowercase. It then checks if the cleaned string is equal to its reverse. If it is,"
+        "In Ruby , write a method acting to check whether a string is a palindrome .": {
+            "description": "Here's an example of a Ruby method that checks whether a given string is a palindrome:",
+            "code": "ruby\ndef is_palindrome?(str)\n  # Remove any non-alphanumeric characters and convert the string to lowercase\n  clean_str = str.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the reversed string is equal to the original string\n  clean_str == clean_str.reverse\nend"
+        },
+        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Sure! Here's a Ruby method that checks whether a string is a palindrome:",
+            "code": "ruby\ndef palindrome?(str)\n  # Remove any special characters or whitespaces from the string\n  cleaned_str = str.downcase.gsub(/[^a-z0-9]/, '')\n\n  # Check if the cleaned string is equal to its reverse\n  cleaned_str == cleaned_str.reverse\nend\n\n# Example usage\nputs palindrome?('racecar') # true\nputs palindrome?('Hello World') # false\nputs palindrome?('A man, a plan, a canal, Panama!') # true"
+        },
+        "In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here's a Ruby method to check whether a string is a palindrome:",
+            "code": "ruby\ndef palindrome?(str)\n  # Convert the string to lowercase and remove any\n  # non-alphanumeric characters using regex\n  cleaned_str = str.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the cleaned string equals its reverse\n  cleaned_str == cleaned_str.reverse\nend"
+        }
     }
 }

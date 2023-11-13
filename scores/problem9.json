@@ -1,15 +1,15 @@
 {
     "prompt": "Construct a regular expression in JavaScript that validates an email address.",
     "similarities": [
-        0.023809523809523836,
-        0.0,
-        0.0
+        0.25,
+        0.1875,
+        0.25
     ],
-    "mean_similarity": 0.007936507936507945,
+    "mean_similarity": 0.22916666666666666,
     "distances": [
-        563,
-        583,
-        605
+        37,
+        198,
+        42
     ],
-    "mean_distance": 583.6666666666666
+    "mean_distance": 92.33333333333333
 }

@@ -1,15 +1,7 @@
 {
     "prompt": "Write a Python script to merge two sorted lists into a new sorted list.",
-    "similarities": [
-        0.5681818181818181,
-        0.641025641025641,
-        0.5789473684210527
-    ],
-    "mean_similarity": 0.596051609209504,
-    "distances": [
-        151,
-        224,
-        194
-    ],
-    "mean_distance": 189.66666666666666
+    "similarities": [],
+    "mean_similarity": null,
+    "distances": [],
+    "mean_distance": null
 }

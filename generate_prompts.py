@@ -27,14 +27,18 @@ def get_llm_response(prompt, openai_api_key, max_response_length=150):
     openai.api_key = openai_api_key
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  
+            model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": prompt}],
             max_tokens=max_response_length
         )
-        return response['choices'][0]['message']['content'].strip()
+        content = response['choices'][0]['message']['content'].strip()
+        description, code = extract_code(content)
+        return {'description': description, 'code': code}
     except openai.error.OpenAIError as e:
         print(f"An error occurred: {e}")
-        return None
+        return {'description': None, 'code': None}
+
+
 
 def get_synonyms(word):
     synonyms = set()
@@ -63,6 +67,20 @@ def generate_variations(base_prompt):
     variation3 = base_prompt.replace("What is the", "I'm curious about the", 1)
     return [variation1, variation2, variation3]
 
+def extract_code(content):
+    # This function assumes that the code block is wrapped within triple backticks
+    parts = content.split('```')
+    if len(parts) >= 3:
+        description = parts[0].strip()  # Text before the code block
+        code = parts[1].strip()         # The code block
+        # It assumes that anything after the first code block is also a description
+        return description, code
+    else:
+        # If no code block is found, return the entire content as description
+        return content, None
+
+
+
 # Function to calculate Jaccard Similarity
 def calculate_jaccard_similarity(response1, response2):
     vectorizer = CountVectorizer(binary=True)
@@ -79,37 +97,43 @@ def analyze_prompts(problems_data, openai_api_key):
     os.makedirs(scores_directory, exist_ok=True)
 
     for base_prompt, filename in problems_data:
-        # Extract the problem number from the filename
         problem_number = filename.replace('.json', '')
 
-        base_response = get_llm_response(base_prompt, openai_api_key)
-        if base_response:
+        base_response_data = get_llm_response(base_prompt, openai_api_key)
+        if base_response_data['description'] is not None:  # Check if a response was received
+            base_code = base_response_data['code']  # Get the code part of the base response
             variations = generate_variations(base_prompt)
             variation_responses = {}
 
             for var in variations:
-                var_response = get_llm_response(var, openai_api_key)
-                if var_response:
-                    variation_responses[var] = var_response
-
-            # Save responses to JSON file in the 'responses' folder
-            responses_file_path = os.path.join(responses_directory, f"{problem_number}.json")
-            with open(responses_file_path, 'w') as json_file:
-                json.dump({
-                    'base_prompt': base_prompt,
-                    'base_response': base_response,
-                    'variation_responses': variation_responses
-                }, json_file, indent=4)
+                var_response_data = get_llm_response(var, openai_api_key)
+                if var_response_data['description'] is not None:
+                    var_code = var_response_data['code']  # Get the code part of the variant response
+                    variation_responses[var] = {
+                        'description': var_response_data['description'],
+                        'code': var_code
+                    }
 
             # Calculate and save scores
             similarities = []
             distances = []
 
             for var, var_response in variation_responses.items():
-                sim = calculate_jaccard_similarity(base_response, var_response)
-                dist = calculate_levenshtein_distance(base_response, var_response)
-                similarities.append(sim)
-                distances.append(dist)
+                if base_code and var_response['code']:
+                    sim = calculate_jaccard_similarity(base_code, var_response['code'])
+                    dist = calculate_levenshtein_distance(base_code, var_response['code'])
+                    similarities.append(sim)
+                    distances.append(dist)
+
+            # Save responses to JSON file in the 'responses' folder
+            responses_file_path = os.path.join(responses_directory, f"{problem_number}.json")
+            with open(responses_file_path, 'w') as json_file:
+                json.dump({
+                    'base_prompt': base_prompt,
+                    'base_response': base_response_data['description'],
+                    'base_code': base_code,
+                    'variation_responses': variation_responses
+                }, json_file, indent=4)
 
             # Save scores to JSON file in the 'scores' folder
             scores_file_path = os.path.join(scores_directory, f"{problem_number}.json")
@@ -121,6 +145,7 @@ def analyze_prompts(problems_data, openai_api_key):
                     'distances': distances,
                     'mean_distance': np.mean(distances) if distances else None
                 }, json_file, indent=4)
+
 
 directory_path = "prompts"
 loaded_prompts = load_problems(directory_path)

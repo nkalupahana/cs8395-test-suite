@@ -1,15 +1,7 @@
 {
     "prompt": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.",
-    "similarities": [
-        1.0,
-        0.1724137931034483,
-        1.0
-    ],
-    "mean_similarity": 0.7241379310344828,
-    "distances": [
-        1,
-        306,
-        0
-    ],
-    "mean_distance": 102.33333333333333
+    "similarities": [],
+    "mean_similarity": null,
+    "distances": [],
+    "mean_distance": null
 }

@@ -1,9 +1,19 @@
 {
     "base_prompt": "Develop a Swift function that returns the nth Fibonacci number.",
-    "base_response": "Here's a Swift function that returns the nth Fibonacci number using recursion:\n\n```swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    }\n    \n    return fibonacci(n - 1) + fibonacci(n - 2)\n}\n\n\n// Testing the function\nlet n = 6\nlet fibNumber = fibonacci(n)\nprint(\"The \\(n)th Fibonacci number is \\(fibNumber)\")\n```\n\nThis function uses recursion to calculate the Fibonacci number. If the input `n` is less than or equal to 0, it returns 0. If `n` is equal to 1, it returns 1",
+    "base_response": "Here is an example of a Swift function that returns the nth Fibonacci number using recursion:",
+    "base_code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 1 {\n        return n\n    }\n    return fibonacci(n - 1) + fibonacci(n - 2)\n}\n\nlet n = 10\nlet result = fibonacci(n)\nprint(\"The \\(n)th Fibonacci number is: \\(result)\")",
     "variation_responses": {
-        "Develop a Swift function that returns the nth Fibonacci turn .": "Here is a Swift function that returns the nth Fibonacci term using recursion:\n\n```swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 || n == 2 {\n        return 1\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2)\n    }\n}\n\n// Example usage\nlet n = 6\nlet result = fibonacci(n)\nprint(\"The \\(n)th Fibonacci term is: \\(result)\")\n```\n\nIn this implementation, the function `fibonacci` takes an integer `n` as input and returns the nth Fibonacci term. The function uses recursion to calculate the Fibonacci term. The base cases",
-        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": "Sure! Here's a Swift function that returns the nth Fibonacci number:\n\n```swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 || n == 2 {\n        return 1\n    } else {\n        var fibNMinus1 = 1\n        var fibNMinus2 = 1\n        var fibN = 0\n        for _ in 3...n {\n            fibN = fibNMinus1 + fibNMinus2\n            fibNMinus2 = fibNMinus1\n            fibNMinus1 = fibN\n        }\n        return fibN\n    }\n}\n\n// Example usage:\nlet nthF",
-        "Develop a Swift function that returns the nth Fibonacci number.": "Here is a Swift function that returns the nth Fibonacci number:\n\n```swift\nfunc fibonacciNumber(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        var fibNumbers: [Int] = [0, 1]\n        for i in 2...n {\n            fibNumbers.append(fibNumbers[i-1] + fibNumbers[i-2])\n        }\n        return fibNumbers[n]\n    }\n}\n```\n\nYou can call this function to get the nth Fibonacci number, where n is the input parameter. For example:\n\n```swift\nlet n = 10\nlet result = fibonacciNumber(n)\nprint"
+        "Develop a Swift serve that returns the nth Fibonacci number .": {
+            "description": "To develop a Swift server that returns the nth Fibonacci number, follow these steps:\n\n1. Create a new Swift project using Xcode or your preferred development environment.\n\n2. Open the terminal and navigate to the project directory.\n\n3. Run the following command to create a new Swift package:",
+            "code": "shell\nswift package init --type executable"
+        },
+        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Sure! Here's a Swift function that returns the nth Fibonacci number using recursion:",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    }\n    \n    return fibonacci(n - 1) + fibonacci(n - 2)\n}"
+        },
+        "Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Here's a Swift function that calculates and returns the nth Fibonacci number using recursion:",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2)\n    }\n}"
+        }
     }
 }

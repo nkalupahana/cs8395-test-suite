@@ -1,0 +1,15 @@
+{
+    "prompt": "Write a Python function to check if a number is prime.",
+    "similarities": [
+        0.46153846153846156,
+        0.7446808510638299,
+        0.5869565217391304
+    ],
+    "mean_similarity": 0.5977252781138073,
+    "distances": [
+        353,
+        245,
+        324
+    ],
+    "mean_distance": 307.3333333333333
+}
