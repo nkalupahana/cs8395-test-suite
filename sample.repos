@@ -7,3 +7,7 @@ repositories:
     type: git
     url: https://github.com/nkalupahana/cs8395-code-coverage.git
     version: demo
+  noah-translation:
+    type: git
+    url: https://github.com/noahzong/GPT_Testing_Framework_Extension.git
+    version: main
