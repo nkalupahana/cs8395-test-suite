@@ -1,6 +1,6 @@
 repositories:
-  chat-gpt-find-first-error:
+  chat-gpt-readability-and-maintainability:
     type: git
-    url: https://github.com/RajayPreddie/cs8395-test-chat-gpt-in-finding-first-error
+    url: https://github.com/RajayPreddie/cs8395-chatgpt-readability-maintainability-test
     version: main
   
