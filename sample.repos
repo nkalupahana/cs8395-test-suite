@@ -11,3 +11,8 @@ repositories:
     type: git
     url: https://github.com/impassionate/Translation
     version: main
+  DSL:
+    type: git
+    url: https://github.com/impassionate/DSL
+    version: main
+
