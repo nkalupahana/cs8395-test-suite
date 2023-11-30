@@ -7,3 +7,12 @@ repositories:
     type: git
     url: https://github.com/nkalupahana/cs8395-code-coverage.git
     version: demo
+  Translation:
+    type: git
+    url: https://github.com/impassionate/Translation
+    version: main
+  DSL:
+    type: git
+    url: https://github.com/impassionate/DSL
+    version: main
+
