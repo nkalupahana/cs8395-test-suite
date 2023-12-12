@@ -10,7 +10,7 @@ from nltk.corpus import wordnet
 nltk.download('averaged_perceptron_tagger')
 nltk.download('wordnet')
 import Levenshtein
-openai_api_key = "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"
+openai_api_key = "key"
 
 temperature_values = [0.2, 0.5, 0.7, 1.0]
 max_tokens_values = 150
