@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Use PHP to count the number of times a specific value appears in an array.",
+    "base_response": "To count the number of times a specific value appears in an array using PHP, you can use the `array_count_values()` function. Here's an example:\n\n\n\nIn this example, we have an array `$array` with some values,",
+    "base_code": "php\n<?php\n$array = [1, 2, 3, 4, 2, 1, 2, 3, 4, 5];\n$value = 2;\n\n$count = array_count_values($array);\n\nif (isset($count[$value])) {\n    echo \"The value $value appears \" . $count[$value] . \" times in the array.\";\n} else {\n    echo \"The value $value does not appear in the array.\";\n}\n?>",
+    "variation_responses": {
+        "Use PHP to count the number of times a particular value appears in an array .": {
+            "description": "To count the number of times a particular value appears in an array using PHP, you can use the `array_count_values()` function. Here's an example:\n\n\n\nOutput:\n\n\nIn this example, the `array_count_values()` function returns an associative array where the keys are the unique values from the original array, and the values are the count",
+            "code": "The value 2 appears 3 times in the array."
+        },
+        "Can you tell me: Use PHP to count the number of times a specific value appears in an array.": {
+            "description": "Certainly! Here's an example of how you can use PHP to count the number of times a specific value appears in an array:\n\n\n\nIn this example, we have an array",
+            "code": "php\n<?php\n// Sample array\n$numbers = array(1, 2, 3, 4, 2, 5, 2, 6, 2);\n\n// Value to count\n$searchValue = 2;\n\n// Count the occurrences of the value in the array\n$count = 0;\nforeach ($numbers as $number) {\n    if ($number == $searchValue) {\n        $count++;\n    }\n}\n\n// Output the result\necho \"The value $searchValue appears $count times in the array.\";\n?>"
+        },
+        "Use PHP to count the number of times a specific value appears in an array.": {
+            "description": "To count the number of times a specific value appears in an array using PHP, you can use the `array_count_values()` function. Here's an example:\n\n\n\nOutput:\n\n\nIn this example, we have an array `$array` with some values, and we want to count the number of times the value `2`",
+            "code": "The value 2 appears 4 times in the array."
+        }
+    }
+}

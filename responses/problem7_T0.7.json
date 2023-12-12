@@ -1,0 +1,19 @@
+{
+    "base_prompt": "In Ruby, write a method to check whether a string is a palindrome.",
+    "base_response": "Here's a method in Ruby to check whether a string is a palindrome:\n\n\n\nYou can use this method to check if a string is a palindrome. For example:",
+    "base_code": "ruby\nputs palindrome?('racecar')  # true\nputs palindrome?('hello')    # false\nputs palindrome?('A man, a plan, a canal, Panama!')  # true",
+    "variation_responses": {
+        "In Ruby , write a method to check whether a string is a palindrome .": {
+            "description": "Here's a Ruby method to check whether a string is a palindrome:\n\n\n\nTo use this method, you can call it with a string as an argument. It will return `true` if the string is a palindrome and `false` otherwise.\n\nExample usage:",
+            "code": "ruby\nputs palindrome?(\"A man, a plan, a canal, Panama\")  # true\nputs palindrome?(\"Hello, world!\")                  # false\nputs palindrome?(\"Race car\")"
+        },
+        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here is an example of a method in Ruby that checks whether a string is a palindrome:\n\n\n\nTo use this method, you can call it with a string argument:\n\n\n\nThe method first converts the string to lowercase using the `downcase` method. Then,",
+            "code": "ruby\nputs palindrome?('racecar') # Output: true\nputs palindrome?('hello')   # Output: false\nputs palindrome?('A man, a plan, a canal, Panama!') # Output: true"
+        },
+        "In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here's a Ruby method to check whether a string is a palindrome:\n\n\n\nThis method takes a string as an argument and first cleans it by removing non-alphanumeric characters and converting it to lowercase. Then, it checks whether the cleaned string is the same in reverse using the `reverse` method. The method returns `true` if the string is a palindrome and `false` otherwise.\n\nYou can call this method with a string argument like this",
+            "code": "ruby\ndef palindrome?(str)\n  # Remove non-alphanumeric characters and convert to lowercase\n  clean_str = str.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the cleaned string is the same in reverse\n  clean_str == clean_str.reverse\nend"
+        }
+    }
+}

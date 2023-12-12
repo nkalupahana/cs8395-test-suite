@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Implement a function in Go that checks if a string is an anagram of another string.",
+    "base_response": "Here's an example implementation of a function in Go that checks if a string is an anagram of another string:",
+    "base_code": "go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\n// Function to check if two strings are anagrams\nfunc isAnagram(str1 string, str2 string) bool {\n\t// Convert both strings to lowercase\n\tstr1 = strings.ToLower(str1)\n\tstr2 = strings.ToLower(str2)\n\n\t// Sort both strings\n\tstr1Sorted := sortString(str1)\n\tstr2Sorted := sortString(str2)\n\n\t// Compare the sorted strings\n\tif str1Sorted == str2Sorted {\n\t\treturn true\n\t}\n\treturn false\n}\n\n// Helper function to sort a string\nfunc",
+    "variation_responses": {
+        "Implement a function in Go that checks if a strand is an anagram of another string .": {
+            "description": "Sure! Here's an example implementation in Go:",
+            "code": "go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n)\n\n// Function to check if two strings are anagrams of each other\nfunc areAnagrams(str1, str2 string) bool {\n\t// Convert both strings to byte slices\n\tbytes1 := []byte(str1)\n\tbytes2 := []byte(str2)\n\n\t// Sort the byte slices\n\tsort.SliceStable(bytes1, func(i, j int) bool { return bytes1[i] < bytes1[j] })\n\tsort.SliceStable(bytes2, func(i, j int) bool { return bytes2[i] < bytes2[j] })\n\n\t// Convert the sorted byte slices back to strings\n\tsorted"
+        },
+        "Can you tell me: Implement a function in Go that checks if a string is an anagram of another string.": {
+            "description": "Sure! Here's an example implementation in Go:",
+            "code": "go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\nfunc isAnagram(str1, str2 string) bool {\n\t// Convert both strings to lowercase\n\tstr1 = strings.ToLower(str1)\n\tstr2 = strings.ToLower(str2)\n\n\t// Convert strings to slices of characters\n\tslice1 := strings.Split(str1, \"\")\n\tslice2 := strings.Split(str2, \"\")\n\n\t// Sort the slices\n\tsort.Strings(slice1)\n\tsort.Strings(slice2)\n\n\t// Join the sorted slices to form new strings\n\tsortedStr1 := strings.Join(slice1, \"\")\n\tsortedStr2 := strings.Join(slice2, \"\")\n\n\t// Check if the sorted"
+        },
+        "Implement a function in Go that checks if a string is an anagram of another string.": {
+            "description": "Here's a function in Go that checks if one string is an anagram of another string:",
+            "code": "go\npackage main\n\nimport (\n    \"fmt\"\n    \"sort\"\n    \"strings\"\n)\n\n// Function to check if two strings are anagrams\nfunc isAnagram(s1, s2 string) bool {\n    // Convert both strings to lowercase\n    s1 = strings.ToLower(s1)\n    s2 = strings.ToLower(s2)\n    \n    // Convert strings to slices of runes to sort\n    s1Runes := []rune(s1)\n    s2Runes := []rune(s2)\n    \n    // Sort both slices of runes\n    sort.Slice(s1Runes, func(i, j int) bool"
+        }
+    }
+}

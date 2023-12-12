@@ -1,0 +1,13 @@
+{
+    "prompt": "Write a C++ program to convert a binary number to a decimal number.",
+    "similarities": [
+        0.6551724137931034,
+        0.84
+    ],
+    "mean_similarity": 0.7475862068965518,
+    "distances": [
+        165,
+        131
+    ],
+    "mean_distance": 148.0
+}

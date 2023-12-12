@@ -1,0 +1,19 @@
+{
+    "base_prompt": "In Ruby, write a method to check whether a string is a palindrome.",
+    "base_response": "Here's a Ruby method that checks whether a string is a palindrome:\n\n\n\nExample usage:\n\n\n\nThis method takes a string as a parameter",
+    "base_code": "ruby\nputs palindrome?('racecar')   # true\nputs palindrome?('hello')     # false\nputs palindrome?('A man, a plan, a canal, Panama!')   # true\nputs palindrome?('12321')     # true\nputs palindrome?('123456')    # false",
+    "variation_responses": {
+        "In Ruby , write a method to check whether a drawstring is a palindrome .": {
+            "description": "Here's an example of a method in Ruby that checks whether a drawstring is a palindrome:\n\n\n\nTo use this method, you can call it and pass a drawstring as an argument. It will return `true` if the drawstring is a palindrome, and `false` otherwise.\n\nExample usage:",
+            "code": "ruby\nputs palindrome?(\"racecar\")  # Output: true\nputs palindrome?(\"hello\")    # Output: false\nputs palindrome?(\"madam\")    # Output: true"
+        },
+        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Certainly! Here's a method in Ruby that checks whether a string is a palindrome:\n\n\n\nTo use this method, you can call it and pass the string you want to check as an argument. For example:\n\n\n\nThis method first converts the string to lowercase and removes all non-alphanumeric characters using the `gsub` method with a regular expression. Then, it compares the modified string with its",
+            "code": "ruby\nputs palindrome?('racecar') # Outputs: true\nputs palindrome?('hello')   # Outputs: false"
+        },
+        "In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here's a Ruby method to check whether a string is a palindrome:\n\n\n\nTo use this method, you can pass a string as an argument and it will return `true` if the string is a palindrome, and `false` otherwise. Here are a few examples:",
+            "code": "ruby\nputs palindrome?('level')   # true\nputs palindrome?('hello')   # false\nputs palindrome?('12321')"
+        }
+    }
+}

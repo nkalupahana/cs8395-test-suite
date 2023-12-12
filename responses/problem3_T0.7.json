@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Create a Java method that finds the largest number in an array.",
+    "base_response": "Here is a Java method that finds the largest number in an array:",
+    "base_code": "java\npublic class Main {\n    public static int findLargestNumber(int[] numbers) {\n        if (numbers == null || numbers.length == 0) {\n            throw new IllegalArgumentException(\"The array must not be empty or null\");\n        }\n        \n        int largestNumber = numbers[0]; // Assume the first number is the largest\n        \n        for (int i = 1; i < numbers.length; i++) {\n            if (numbers[i] > largestNumber) {\n                largestNumber = numbers[i];\n            }\n        }\n        \n        return largestNumber;\n    }\n    \n    public static void main(String[] args) {\n        int[] numbers = {5,",
+    "variation_responses": {
+        "Create a Java method that finds the largest number in an array .": {
+            "description": "Here is a Java method that finds the largest number in an array:\n\n\n\nYou can use this method by passing an array of integers to it. For example:",
+            "code": "java\nint[] numbers = {5, 10, 15, 20, 25};\nint largestNumber = findLargestNumber(numbers);\nSystem.out.println(\"The largest number is: \" + largestNumber);"
+        },
+        "Can you tell me: Create a Java method that finds the largest number in an array.": {
+            "description": "Sure! Here's a Java method that finds the largest number in an array:",
+            "code": "java\npublic class Main {\n    public static void main(String[] args) {\n        int[] numbers = {5, 10, 2, 15, 3};\n        int largestNumber = findLargestNumber(numbers);\n        System.out.println(\"The largest number in the array is: \" + largestNumber);\n    }\n    \n    public static int findLargestNumber(int[] array) {\n        int largest = array[0];\n        for (int i = 1; i < array.length; i++) {\n            if (array[i] > largest) {\n                largest = array[i];\n            }\n        }\n        return largest;\n    }\n}"
+        },
+        "Create a Java method that finds the largest number in an array.": {
+            "description": "Here's a Java method that finds the largest number in an array:",
+            "code": "java\npublic class Main {\n\n    public static int findLargestNumber(int[] numbers) {\n        // Initialize the largest number as the first element in the array\n        int largestNumber = numbers[0];\n        \n        // Iterate through the array starting from the second element\n        for (int i = 1; i < numbers.length; i++) {\n            // If the current number is larger than the largest number, update the largest number\n            if (numbers[i] > largestNumber) {\n                largestNumber = numbers[i];\n            }\n        }\n        \n        // Return the largest number\n        return largestNumber;\n    }\n\n    public static void main(String[] args"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "prompt": "Develop a Swift function that returns the nth Fibonacci number.",
+    "similarities": [
+        0.125,
+        0.375,
+        0.125
+    ],
+    "mean_similarity": 0.20833333333333334,
+    "distances": [
+        358,
+        238,
+        225
+    ],
+    "mean_distance": 273.6666666666667
+}

@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Construct a regular expression in JavaScript that validates an email address.",
+    "base_response": "Here's a regular expression in JavaScript that can be used to validate an email address:\n\n\n\nThis regular expression follows the common rules for validating email addresses:\n\n- Starts with one or more characters that are not whitespace or '@'.\n- Followed by the '@' symbol.\n- Followed by one or more characters that are not whitespace or '@'.\n- Followed by the '.' symbol.\n- Ends with one or more characters that are not whitespace or '@'.\n\nYou can use this regular expression in JavaScript to validate an email address like this:",
+    "base_code": "javascript\nconst email = \"example@example.com\";\nif (emailRegex.test(email)) {",
+    "variation_responses": {
+        "build a regular expression in JavaScript that validates an email address .": {
+            "description": "A regular expression in JavaScript that validates an email address can be created as follows:\n\n\n\nExplanation of the above regular expression:\n\n- `^` - Start of the string\n- `[^\\s@]+` - Matches one or more characters that are not whitespace or `@`\n- `@` - Matches the `@` symbol\n- `[^\\s@]+` - Matches one or more characters that are not whitespace or `@`\n- `\\.` - Matches the `.` symbol (escaped with a backslash)\n- `[^\\s@]+` - Matches one or more characters that are not whitespace or `@`",
+            "code": "javascript\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;"
+        },
+        "Can you tell me: Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "Sure! Here's an example of a regular expression in JavaScript that validates an email address:\n\n\n\nExplanation of the regular expression:\n\n- `^` asserts the start of the string.\n- `[a-zA-Z0-9._%+-]+` matches one or more alphanumeric characters, dots, underscores, percent signs, plus signs, or hyphens.\n- `@` matches the at symbol.\n- `[a-zA-Z0-9.-]+` matches one or more alphanumeric characters, dots, or hyphens for the domain name.\n- `\\.` matches",
+            "code": "javascript\nconst emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/;"
+        },
+        "Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "Here is an example of a regular expression in JavaScript that validates an email address:\n\n\n\nExplanation of the regular expression pattern:\n- `^` asserts the beginning of the string.\n- `[^\\s@]+` matches one or more characters that are not whitespace or '@'.\n- `@` matches the '@' symbol.\n- `[^\\s@]+` matches one or more characters that are not whitespace or '@'.\n- `\\.` matches the dot character '.'.\n- `[^\\s@]+` matches one",
+            "code": "javascript\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n\n// Example usage\nconst email = 'test@example.com';\nconsole.log(emailRegex.test(email)); // Output: true"
+        }
+    }
+}

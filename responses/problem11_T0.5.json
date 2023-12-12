@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Develop a Swift function that returns the nth Fibonacci number.",
+    "base_response": "Here is a Swift function that returns the nth Fibonacci number:\n\n\n\nYou can call this function to get the nth Fibonacci number like this:",
+    "base_code": "swift\nlet n = 6\nlet result = fibonacci(n)\nprint(\"The",
+    "variation_responses": {
+        "Develop a Swift function that returns the nth Fibonacci telephone number .": {
+            "description": "Here is a Swift function that returns the nth Fibonacci telephone number:\n\n\n\nIn this function, we first check if `n` is greater than 0.",
+            "code": "swift\nfunc fibonacciTelephoneNumber(_ n: Int) -> Int {\n    guard n > 0 else {\n        return 0\n    }\n    \n    var fibNumbers = [0, 1]\n    \n    for i in 2...n {\n        let nextNumber = fibNumbers[i-1] + fibNumbers[i-2]\n        fibNumbers.append(nextNumber)\n    }\n    \n    return fibNumbers[n]\n}\n\n// Example usage\nlet nthFibonacciNumber = fibonacciTelephoneNumber(10)\nprint(nthFibonacciNumber) // Output: 55"
+        },
+        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Sure! Here's an example of a Swift function that returns the nth Fibonacci number using recursion:\n\n\n\nIn this function, we check if the input `n` is less than or equal to 0 and return 0 in that case. If `n` is 1, we return",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2)\n    }\n}\n\n// Example usage:\nlet n = 6\nlet result = fibonacci(n)\nprint(\"The \\(n)th Fibonacci number is \\(result).\")"
+        },
+        "Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Here is an implementation of a Swift function that returns the nth Fibonacci number:\n\n\n\nThis function takes an input `n` and returns the nth Fibonacci number. It first checks if `n` is less than or equal to 0, in which case it returns 0. If `n` is equal to",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        var fib = [0, 1]\n        for i in 2...n {\n            fib.append(fib[i-1] + fib[i-2])\n        }\n        return fib[n]\n    }\n}"
+        }
+    }
+}

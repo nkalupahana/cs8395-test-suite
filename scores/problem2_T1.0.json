@@ -1,0 +1,15 @@
+{
+    "prompt": "Implement a function in JavaScript to calculate the factorial of a number.",
+    "similarities": [
+        0.30000000000000004,
+        0.19999999999999996,
+        0.2222222222222222
+    ],
+    "mean_similarity": 0.24074074074074073,
+    "distances": [
+        151,
+        335,
+        99
+    ],
+    "mean_distance": 195.0
+}

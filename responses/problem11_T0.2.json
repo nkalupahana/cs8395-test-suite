@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Develop a Swift function that returns the nth Fibonacci number.",
+    "base_response": "Here's a Swift function that returns the nth Fibonacci number using recursion:\n\n\n\nYou can call this function with the desired value of n to get the nth Fibonacci number. For example:\n\n\n\nNote that this implementation has exponential time complexity, so it may not be efficient for large values of n. If you need to calculate Fibonacci numbers for larger values",
+    "base_code": "swift\nlet result = fibonacci(6)\nprint(result) // Output: 8",
+    "variation_responses": {
+        "Develop a Swift function that returns the nth Fibonacci number .": {
+            "description": "Here is a Swift function that returns the nth Fibonacci number:\n\n\n\nYou can call this function with the desired value of n to get the nth Fibonacci number. For example:\n\n\n\nIn this example, the function `",
+            "code": "swift\nlet result = fibonacci(6)\nprint(result) // Output: 8"
+        },
+        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Sure! Here's an example of a Swift function that returns the nth Fibonacci number:\n\n\n\nIn this function, we first handle the base cases where n is less than or equal to 0 (returning 0) or equal to 1 (returning 1). For any other value of n,",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        var fib = [0, 1]\n        for i in 2...n {\n            fib.append(fib[i-1] + fib[i-2])\n        }\n        return fib[n]\n    }\n}"
+        },
+        "Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Here's a Swift function that returns the nth Fibonacci number using recursion:\n\n\n\nYou can call this function with the desired value of n to get the nth Fibonacci number. For example:\n\n\n\nNote that this implementation has an exponential time complexity, so it may not be efficient for large values of n. To optimize it, you can use memoization",
+            "code": "swift\nlet result = fibonacci(6)\nprint(result) // Output: 8"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a C++ program to convert a binary number to a decimal number.",
+    "base_response": "Here is a C++ program to convert a binary number to a decimal number:",
+    "base_code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(int binaryNumber) {\n    int decimalNumber = 0, i = 0, remainder;\n    while (binaryNumber != 0) {\n        remainder = binaryNumber % 10;\n        binaryNumber /= 10;\n        decimalNumber += remainder * pow(2, i);\n        ++i;\n    }\n    return decimalNumber;\n}\n\nint main() {\n    int binaryNumber;\n    cout << \"Enter a binary number: \";\n    cin >> binaryNumber;\n    cout << \"Decimal equivalent: \" << binaryToDecimal(binaryNumber) << endl;\n    return",
+    "variation_responses": {
+        "Write a C++ program to convert a binary number to a decimal telephone number .": {
+            "description": "Here is a C++ program that converts a binary number to a decimal telephone number:",
+            "code": "cpp\n#include <iostream>\n#include <string>\n#include <cmath>\n\nusing namespace std;\n\n// Function to convert binary to decimal\nint binaryToDecimal(string binary) {\n    int decimal = 0;\n    int power = 0;\n\n    for (int i = binary.length() - 1; i >= 0; i--) {\n        if (binary[i] == '1') {\n            decimal += pow(2, power);\n        }\n        power++;\n    }\n\n    return decimal;\n}\n\n// Function to convert decimal to telephone number\nstring decimalToTelephone(int decimal) {\n    string telephone = to_string(decimal);\n\n    // Add dashes to the"
+        },
+        "Can you tell me: Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Sure! Here's a C++ program that converts a binary number to a decimal number:",
+            "code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(long long binaryNum) {\n    int decimalNum = 0, i = 0, remainder;\n    \n    while (binaryNum != 0) {\n        remainder = binaryNum % 10;\n        binaryNum /= 10;\n        decimalNum += remainder * pow(2, i);\n        ++i;\n    }\n    \n    return decimalNum;\n}\n\nint main() {\n    long long binaryNum;\n    \n    cout << \"Enter a binary number: \";\n    cin >> binaryNum;\n    \n    int decimalNum = binaryToDecimal(binaryNum);"
+        },
+        "Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Here's a C++ program that converts a binary number to a decimal number:",
+            "code": "cpp\n#include <iostream>\n#include <cmath>\n\nint binaryToDecimal(long long binaryNumber) {\n    int decimalNumber = 0, i = 0, remainder;\n    \n    while (binaryNumber != 0) {\n        remainder = binaryNumber % 10;\n        binaryNumber /= 10;\n        decimalNumber += remainder * pow(2, i);\n        ++i;\n    }\n    \n    return decimalNumber;\n}\n\nint main() {\n    long long binaryNumber;\n    \n    std::cout << \"Enter a binary number: \";\n    std::cin >> binaryNumber;\n    \n    std::cout << \"Decimal number: \" << binaryToDecimal"
+        }
+    }
+}

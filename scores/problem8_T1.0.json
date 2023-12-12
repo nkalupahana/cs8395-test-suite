@@ -1,0 +1,15 @@
+{
+    "prompt": "Use PHP to count the number of times a specific value appears in an array.",
+    "similarities": [
+        0.6799999999999999,
+        0.3076923076923077,
+        0.5384615384615384
+    ],
+    "mean_similarity": 0.5087179487179486,
+    "distances": [
+        124,
+        255,
+        175
+    ],
+    "mean_distance": 184.66666666666666
+}

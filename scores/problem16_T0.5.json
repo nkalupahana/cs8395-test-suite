@@ -1,0 +1,15 @@
+{
+    "prompt": "Write a Kotlin function that determines if a string is a valid IPv4 address.",
+    "similarities": [
+        0.9090909090909091,
+        0.6190476190476191,
+        0.4864864864864865
+    ],
+    "mean_similarity": 0.6715416715416715,
+    "distances": [
+        24,
+        248,
+        211
+    ],
+    "mean_distance": 161.0
+}

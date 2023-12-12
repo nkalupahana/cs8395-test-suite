@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Implement a function in JavaScript to calculate the factorial of a number.",
+    "base_response": "Here is an implementation of a factorial function in JavaScript:\n\n\n\nThis function uses a recursive approach to calculate the factorial. It checks if the input number `n` is 0 or 1, in which case it returns 1. Otherwise, it multiplies `n` by the factorial of `n-",
+    "base_code": "javascript\nfunction factorial(n) {\n  if (n === 0 || n === 1) {\n    return 1;\n  } else {\n    return n * factorial(n - 1);\n  }\n}\n\n// Example usage:\nconsole.log(factorial(5)); // Output: 120\nconsole.log(factorial(0)); // Output: 1\nconsole.log(factorial(1)); // Output: 1",
+    "variation_responses": {
+        "Implement a procedure in JavaScript to calculate the factorial of a number .": {
+            "description": "Here is an implementation of a factorial calculation procedure in JavaScript:\n\n\n\nIn this code, the `factorial` function takes a number `n` as input and",
+            "code": "javascript\nfunction factorial(n) {\n  // Base case: factorial of 0 or 1 is 1\n  if (n === 0 || n === 1) {\n    return 1;\n  }\n  \n  // Recursive case: multiply n by factorial of (n-1)\n  return n * factorial(n - 1);\n}\n\n// Test the factorial function\nconsole.log(factorial(5)); // Output: 120\nconsole.log(factorial(0)); // Output: 1\nconsole.log(factorial(1)); // Output: 1"
+        },
+        "Can you tell me: Implement a function in JavaScript to calculate the factorial of a number.": {
+            "description": "Sure! Here's an example of a JavaScript function to calculate the factorial of a number:\n\n\n\nYou can call this function with any number to calculate its factorial. For example:\n\n\n\nThe factorial function uses recursion to calculate the factorial of a number. It checks if the number is either 0 or 1, in which case it returns 1. Otherwise, it recursively calls",
+            "code": "javascript\nconsole.log(factorial(5)); // Output: 120\nconsole.log(factorial(0)); // Output: 1"
+        },
+        "Implement a function in JavaScript to calculate the factorial of a number.": {
+            "description": "Here is a function in JavaScript to calculate the factorial of a number:\n\n\n\nYou can test the function by calling it with a number:\n\n\n\nThis will calculate the factorial of 5, which is 5 x 4 x 3 x 2 x 1 = 120.",
+            "code": "javascript\nconsole.log(factorial(5)); // Output: 120"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a Python script to merge two sorted lists into a new sorted list.",
+    "base_response": "Here's a Python script that merges two sorted lists into a new sorted list:",
+    "base_code": "python\ndef merge_sorted_lists(list1, list2):\n    merged_list = []\n    i = j = 0\n    \n    while i < len(list1) and j < len(list2):\n        if list1[i] < list2[j]:\n            merged_list.append(list1[i])\n            i += 1\n        else:\n            merged_list.append(list2[j])\n            j += 1\n    \n    # Append remaining elements from list1 (if any)\n    while i < len(list1):\n        merged_list.append(list1[i])\n        i += 1\n    \n    # Append remaining elements from list2 (if any)\n    while j < len",
+    "variation_responses": {
+        "Write a Python script to merge two sorted lists into a new sorted lean .": {
+            "description": "Here is a Python script to merge two sorted lists into a new sorted list:",
+            "code": "python\ndef merge_sorted_lists(list1, list2):\n    merged_list = []\n    i = 0\n    j = 0\n\n    while i < len(list1) and j < len(list2):\n        if list1[i] < list2[j]:\n            merged_list.append(list1[i])\n            i += 1\n        else:\n            merged_list.append(list2[j])\n            j += 1\n\n    while i < len(list1):\n        merged_list.append(list1[i])\n        i += 1\n\n    while j < len(list2):\n        merged_list.append(list2[j])\n        j += 1\n\n    return merged"
+        },
+        "Can you tell me: Write a Python script to merge two sorted lists into a new sorted list.": {
+            "description": "Certainly! Here's a Python script that merges two sorted lists into a new sorted list:",
+            "code": "python\ndef merge_sorted_lists(list1, list2):\n    merged_list = []\n    i = 0\n    j = 0\n    \n    while i < len(list1) and j < len(list2):\n        if list1[i] <= list2[j]:\n            merged_list.append(list1[i])\n            i += 1\n        else:\n            merged_list.append(list2[j])\n            j += 1\n    \n    # If any elements are remaining in list1 or list2\n    while i < len(list1):\n        merged_list.append(list1[i])\n        i += 1\n        \n    while j < len(list2):"
+        },
+        "Write a Python script to merge two sorted lists into a new sorted list.": {
+            "description": "Here's a Python script that merges two sorted lists into a new sorted list:",
+            "code": "python\ndef merge_sorted_lists(list1, list2):\n    merged_list = []\n    i = 0\n    j = 0\n    \n    while i < len(list1) and j < len(list2):\n        if list1[i] < list2[j]:\n            merged_list.append(list1[i])\n            i += 1\n        else:\n            merged_list.append(list2[j])\n            j += 1\n    \n    # Add the remaining elements of list1, if any\n    while i < len(list1):\n        merged_list.append(list1[i])\n        i += 1\n    \n    # Add the remaining elements of list2, if any"
+        }
+    }
+}

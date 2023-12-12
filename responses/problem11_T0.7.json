@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Develop a Swift function that returns the nth Fibonacci number.",
+    "base_response": "Here is a Swift function that returns the nth Fibonacci number:",
+    "base_code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        var fibNumPrev = 0\n        var fibNumCurr = 1\n        \n        for _ in 2...n {\n            let fibNumNext = fibNumPrev + fibNumCurr\n            fibNumPrev = fibNumCurr\n            fibNumCurr = fibNumNext\n        }\n        \n        return fibNumCurr\n    }\n}\n\n// Testing the function\nprint(fibonacci(0))  // Output: 0\nprint(fibonacci(",
+    "variation_responses": {
+        "Develop a Swift function that returns the n-th Fibonacci number .": {
+            "description": "Here's a Swift function that returns the n-th Fibonacci number using recursion:\n\n\n\nYou can call this function to get the n-th Fibonacci number like this:\n\n\n\nThis will output:",
+            "code": "The 10-th Fibonacci number is: 55"
+        },
+        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Sure! Here's an example of a Swift function that returns the nth Fibonacci number:",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        var fibArray = [0, 1]\n        for i in 2...n {\n            let fibNumber = fibArray[i-1] + fibArray[i-2]\n            fibArray.append(fibNumber)\n        }\n        return fibArray[n]\n    }\n}\n\n// Example usage:\nlet n = 6\nlet fibonacciNumber = fibonacci(n)\nprint(\"The \\(n)th Fibonacci number is: \\(fibonacciNumber)\")"
+        },
+        "Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Here's a Swift function that returns the nth Fibonacci number:\n\n\n\nYou can call this function and pass the value of n to get the nth Fibonacci number. For example:",
+            "code": "swift\nlet n = 8\nlet nthFibonacci ="
+        }
+    }
+}
