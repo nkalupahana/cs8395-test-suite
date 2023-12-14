@@ -10,6 +10,8 @@ def get_llm(llm_name):
         return OpenAI()
     elif llm_name == "openai-latest-1024":
         return OpenAI(max_tokens=1024)
+    elif llm_name == "gpt-3.5-turbo-instruct":
+        return OpenAI(model="gpt-3.5-turbo-instruct", max_tokens=2048)
     
     raise ValueError(f"LLM '{llm_name}' not found!")
 
