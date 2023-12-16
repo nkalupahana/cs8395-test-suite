@@ -1,0 +1,15 @@
+{
+    "prompt": "Create a Java method that finds the largest number in an array.",
+    "similarities": [
+        0.19999999999999996,
+        0.8292682926829268,
+        0.5853658536585367
+    ],
+    "mean_similarity": 0.5382113821138211,
+    "distances": [
+        439,
+        71,
+        377
+    ],
+    "mean_distance": 295.6666666666667
+}

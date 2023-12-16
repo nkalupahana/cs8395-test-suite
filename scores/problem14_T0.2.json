@@ -1,0 +1,15 @@
+{
+    "prompt": "Create a Rust program to calculate the greatest common divisor (GCD) of two numbers.",
+    "similarities": [
+        0.2142857142857143,
+        0.7619047619047619,
+        1.0
+    ],
+    "mean_similarity": 0.6587301587301587,
+    "distances": [
+        254,
+        59,
+        2
+    ],
+    "mean_distance": 105.0
+}

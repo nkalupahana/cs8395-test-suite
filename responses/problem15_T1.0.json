@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Design a SQL query to find the second highest salary from a table named 'Employees'.",
+    "base_response": "To find the second highest salary from the 'Employees' table, you can use the following SQL query:\n\n\n\nExplanation:\n1. The subquery `(SELECT MAX(Salary) FROM Employees)` is used to get the maximum salary from the 'Employees' table.\n2. The main query then retrieves the maximum salary (`MAX(Salary)`) of employees whose salary is less than the maximum salary obtained from the subquery.\n3. The result is returned as `SecondHighestSalary`.",
+    "base_code": "SELECT MAX(Salary) AS SecondHighestSalary\nFROM Employees\nWHERE Salary < (SELECT MAX(Salary) FROM Employees);",
+    "variation_responses": {
+        "designing a SQL query to find the second highest salary from a table named 'Employees ' .": {
+            "description": "You can use the following SQL query to find the second highest salary from a table named 'Employees':\n\n\n\nThis query finds the maximum salary from the 'Employees' table that is less than the maximum salary in the table, which gives you the second highest salary.\n\nNote: Make sure to replace 'Employees' with the actual table name in your database.",
+            "code": "sql\nSELECT MAX(Salary) AS SecondHighestSalary\nFROM Employees\nWHERE Salary < (\n    SELECT MAX(Salary)\n    FROM Employees\n)"
+        },
+        "Can you tell me: Design a SQL query to find the second highest salary from a table named 'Employees'.": {
+            "description": "Certainly! Here's an example SQL query to find the second highest salary from the 'Employees' table:\n\n\n\nExplanation:\n1. The subquery `SELECT MAX(salary) FROM Employees` finds the highest salary in the 'Employees' table.\n2. The main query selects the maximum salary that is less than the highest salary found in the subquery. This will give you the second highest salary from the table, `AS second_highest_salary`.\n\nNote: The assumption here is that each employee has a unique salary. If there are multiple employees with the same salary and you want to include them in",
+            "code": "sql\nSELECT MAX(salary) AS second_highest_salary\nFROM Employees\nWHERE salary < (SELECT MAX(salary) FROM Employees);"
+        },
+        "Design a SQL query to find the second highest salary from a table named 'Employees'.": {
+            "description": "To find the second highest salary from the 'Employees' table, you can use the following SQL query:\n\n\n\nExplanation:\n1. The inner query `(SELECT MAX(Salary) FROM Employees)` finds the highest salary from the 'Employees' table.\n2. The outer query selects the maximum salary (`MAX(Salary)`) from the 'Employees' table where the salary is less than the highest salary found in the inner query.\n\nThis query will return the second highest salary from the 'Employees' table.",
+            "code": "SELECT MAX(Salary)\nFROM Employees\nWHERE Salary < (SELECT MAX(Salary) FROM Employees);"
+        }
+    }
+}

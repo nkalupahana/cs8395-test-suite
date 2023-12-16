@@ -1,0 +1,19 @@
+{
+    "base_prompt": "In Ruby, write a method to check whether a string is a palindrome.",
+    "base_response": "Here's an example of a method in Ruby that checks whether a given string is a palindrome:",
+    "base_code": "ruby\ndef palindrome?(str)\n  # Remove any non-alphanumeric characters and convert string to lowercase\n  formatted_str = str.gsub(/\\W/, '').downcase\n  # Compare the formatted string with its reverse\n  formatted_str == formatted_str.reverse\nend",
+    "variation_responses": {
+        "In Ruby , write a method acting to check whether a string is a palindrome .": {
+            "description": "Here's an example of a Ruby method that checks whether a given string is a palindrome:",
+            "code": "ruby\ndef is_palindrome?(str)\n  # Remove any non-alphanumeric characters and convert the string to lowercase\n  clean_str = str.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the reversed string is equal to the original string\n  clean_str == clean_str.reverse\nend"
+        },
+        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Sure! Here's a Ruby method that checks whether a string is a palindrome:",
+            "code": "ruby\ndef palindrome?(str)\n  # Remove any special characters or whitespaces from the string\n  cleaned_str = str.downcase.gsub(/[^a-z0-9]/, '')\n\n  # Check if the cleaned string is equal to its reverse\n  cleaned_str == cleaned_str.reverse\nend\n\n# Example usage\nputs palindrome?('racecar') # true\nputs palindrome?('Hello World') # false\nputs palindrome?('A man, a plan, a canal, Panama!') # true"
+        },
+        "In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here's a Ruby method to check whether a string is a palindrome:",
+            "code": "ruby\ndef palindrome?(str)\n  # Convert the string to lowercase and remove any\n  # non-alphanumeric characters using regex\n  cleaned_str = str.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the cleaned string equals its reverse\n  cleaned_str == cleaned_str.reverse\nend"
+        }
+    }
+}

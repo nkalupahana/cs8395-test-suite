@@ -1,0 +1,15 @@
+{
+    "base_prompt": "Create a Java method that finds the largest number in an array.",
+    "base_response": "Sure! Here's an example of a Java method that finds the largest number in an array:\n\n```java\npublic class Main {\n  public static int findLargestNumber(int[] numbers) {\n    if (numbers == null || numbers.length == 0) {\n      throw new IllegalArgumentException(\"Array must not be empty or null\");\n    }\n\n    int max = numbers[0];\n\n    for (int i = 1; i < numbers.length; i++) {\n      if (numbers[i] > max) {\n        max = numbers[i];\n      }\n    }\n\n    return max;\n  }\n\n  public static void main(String[] args) {\n    int[] numbers = { 5, 8, 2, 6, 1,",
+    "base_code": null,
+    "variation_responses": {
+        "Create a Java method that finds the largest number in an raiment .": {
+            "description": "Here is a Java method that finds the largest number in an array:\n\n```java\npublic class LargestNumberInArray {\n    public static int findLargestNumber(int[] arr) {\n        if (arr == null || arr.length == 0) {\n            throw new IllegalArgumentException(\"Array can't be null or empty.\");\n        }\n        \n        int max = arr[0]; // Initialize max with the first element\n        \n        for (int i = 1; i < arr.length; i++) {\n            if (arr[i] > max) {\n                max = arr[i];\n            }\n        }\n        \n        return max;\n    }\n    \n    public static void main(String[] args) {\n        int[] numbers = { 5, 2,",
+            "code": null
+        },
+        "Can you tell me: Create a Java method that finds the largest number in an array.": {
+            "description": "Sure! Here's a Java method that finds the largest number in an array:\n\n```java\npublic class Main {\n\n    public static int findLargestNumber(int[] numbers) {\n        // Initialize the maximum number with the first element of the array\n        int max = numbers[0];\n        \n        // Loop through the array starting from the second element\n        for (int i = 1; i < numbers.length; i++) {\n            // If the current element is greater than the maximum number, update the maximum\n            if (numbers[i] > max) {\n                max = numbers[i];\n            }\n        }\n        \n        return max;\n    }\n\n    public static void main(String[] args) {\n        int[] numbers = {5,",
+            "code": null
+        }
+    }
+}

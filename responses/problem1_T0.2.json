@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a Python function to check if a number is prime.",
+    "base_response": "Here is a Python function that checks if a number is prime:\n\n\n\nTo use this function, you can call it with a number as an argument. It will return `True` if the number is prime, and `False` otherwise. For example:\n\n\n\nThe function checks if the number is less than or equal to 1",
+    "base_code": "python\nprint(is_prime(7))  # Output: True\nprint(is_prime(12))  # Output: False",
+    "variation_responses": {
+        "Write a Python function to check if a phone number is prime .": {
+            "description": "Here is a Python function that checks if a phone number is prime:",
+            "code": "python\ndef is_prime(phone_number):\n    # Remove any non-digit characters from the phone number\n    phone_number = ''.join(filter(str.isdigit, phone_number))\n    \n    # Convert the phone number to an integer\n    phone_number = int(phone_number)\n    \n    # Check if the phone number is less than 2\n    if phone_number < 2:\n        return False\n    \n    # Check if the phone number is divisible by any number from 2 to the square root of the phone number\n    for i in range(2, int(phone_number ** 0.5) + 1):\n        if phone_number % i == 0:\n            return"
+        },
+        "Can you tell me: Write a Python function to check if a number is prime.": {
+            "description": "Sure! Here's a Python function that checks if a number is prime:\n\n\n\nIn this function, we first check if the number is less than or equal to 1, as prime numbers are greater than 1. If the number is less than or equal to 1, we return False.\n\nNext, we iterate from 2 to the square root of the number (inclusive) using a for loop. We check if the number is divisible by any of these values",
+            "code": "python\ndef is_prime(num):\n    if num <= 1:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True"
+        },
+        "Write a Python function to check if a number is prime.": {
+            "description": "Here is a Python function that checks if a number is prime:\n\n\n\nTo use this function, you can call it with a number as an argument. It will return `True` if the number is prime, and `False` otherwise.\n\nFor example:",
+            "code": "python\nprint(is_prime(7))  # True\nprint(is_prime(10))  # False\nprint(is_prime(29))  # True"
+        }
+    }
+}

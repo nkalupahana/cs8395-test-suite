@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 2,
+            "base": "Implement a function in JavaScript to calculate the factorial of a number."
+        }
+    ]
+}

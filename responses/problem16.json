@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a Kotlin function that determines if a string is a valid IPv4 address.",
+    "base_response": "Here is a Kotlin function `isValidIPv4Address` that determines if a given string is a valid IPv4 address:\n\n```kotlin\nfun isValidIPv4Address(ipAddress: String): Boolean {\n    val segments = ipAddress.split(\".\")\n    \n    // IPv4 addresses should contain exactly four segments\n    if (segments.size != 4) {\n        return false\n    }\n    \n    for (segment in segments) {\n        try {\n            val value = segment.toInt()\n            // Each segment should be between 0 and 255 inclusive\n            if (value < 0 || value > 255) {\n                return false\n            }\n            \n            // Leading zeroes are not allowed, unless the segment is 0 itself\n            if (segment",
+    "base_code": null,
+    "variation_responses": {
+        "Write a Kotlin function that determines if a string is a valid IPv4 turn to .": {
+            "description": "Here's a Kotlin function that determines if a string is a valid IPv4 address:",
+            "code": "kotlin\nfun isValidIPv4Address(ip: String): Boolean {\n    val parts = ip.split(\".\")\n    if (parts.size != 4) {\n        return false\n    }\n    for (part in parts) {\n        try {\n            val number = part.toInt()\n            if (number < 0 || number > 255) {\n                return false\n            }\n            if (number.toString() != part) {\n                return false\n            }\n        } catch (e: NumberFormatException) {\n            return false\n        }\n    }\n    return true\n}"
+        },
+        "Can you tell me: Write a Kotlin function that determines if a string is a valid IPv4 address.": {
+            "description": "Sure! Here's an example of a Kotlin function that determines whether a string is a valid IPv4 address:\n\n```kotlin\nfun isValidIPv4Address(ipAddress: String): Boolean {\n    val parts = ipAddress.split(\".\")\n    \n    // Check for four parts\n    if (parts.size != 4) {\n        return false\n    }\n    \n    // Check each part for validity\n    for (part in parts) {\n        val num = part.toIntOrNull()\n        \n        // Check if part is an integer\n        if (num == null) {\n            return false\n        }\n        \n        // Check if integer is within the valid range\n        if (num !in 0..255) {\n            return false\n        }",
+            "code": null
+        },
+        "Write a Kotlin function that determines if a string is a valid IPv4 address.": {
+            "description": "Here's a Kotlin function that checks if a string is a valid IPv4 address:",
+            "code": "kotlin\nfun isValidIPv4(ip: String): Boolean {\n    val parts = ip.split(\".\")\n    if (parts.size != 4) {\n        return false\n    }\n    \n    for (part in parts) {\n        try {\n            val num = part.toInt()\n            if (num < 0 || num > 255) {\n                return false\n            }\n            if (num.toString() != part) {\n                return false\n            }\n        } catch (e: NumberFormatException) {\n            return false\n        }\n    }\n    \n    return true\n}"
+        }
+    }
+}

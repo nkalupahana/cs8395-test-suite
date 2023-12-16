@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 3,
+            "base": "Create a Java method that finds the largest number in an array."
+        }
+    ]
+}

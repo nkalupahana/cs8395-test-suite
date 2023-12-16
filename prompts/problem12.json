@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 12,
+            "base": "Write a C# method that reverses a string without using built-in functions."
+        }
+    ]
+}

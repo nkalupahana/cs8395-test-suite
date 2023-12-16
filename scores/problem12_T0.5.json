@@ -1,0 +1,15 @@
+{
+    "prompt": "Write a C# method that reverses a string without using built-in functions.",
+    "similarities": [
+        0.6842105263157895,
+        0.52,
+        0.4642857142857143
+    ],
+    "mean_similarity": 0.5561654135338346,
+    "distances": [
+        142,
+        188,
+        260
+    ],
+    "mean_distance": 196.66666666666666
+}

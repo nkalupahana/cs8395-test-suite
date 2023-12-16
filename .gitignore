@@ -1,6 +1,5 @@
 repos/
 .DS_Store
 __pycache__
-output.json
 build/
 *.egg-info

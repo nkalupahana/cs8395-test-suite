@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a C# method that reverses a string without using built-in functions.",
+    "base_response": "Here is a C# method that reverses a string without using built-in functions:\n\n\n\nYou can use this method by calling `ReverseString` and passing the string you want to reverse as an argument. For example:",
+    "base_code": "csharp\nstring original = \"Hello, World!\";\nstring reversed = ReverseString(original);",
+    "variation_responses": {
+        "Write a C # method that reverses a string along without using built-in functions .": {
+            "description": "Here's a C# method that reverses a string without using built-in functions:\n\n\n\nTo use this method, you can call it like this:\n\n\n\nOutput:",
+            "code": "csharp\nstring input = \"Hello, World!\";\nstring reversed = ReverseString(input);\nConsole.WriteLine(reversed);"
+        },
+        "Can you tell me: Write a C# method that reverses a string without using built-in functions.": {
+            "description": "Sure! Here's a C# method that reverses a string without using built-in functions:\n\n\n\nTo use this method, you can call it like this:",
+            "code": "csharp\nstring"
+        },
+        "Write a C# method that reverses a string without using built-in functions.": {
+            "description": "Here is a C# method that reverses a string without using built-in functions:\n\n\n\nYou can use this method to reverse a string as follows:",
+            "code": "csharp\nstring originalString"
+        }
+    }
+}

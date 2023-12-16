@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 7,
+            "base": "In Ruby, write a method to check whether a string is a palindrome."
+        }
+    ]
+}

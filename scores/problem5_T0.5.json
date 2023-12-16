@@ -1,0 +1,7 @@
+{
+    "prompt": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.",
+    "similarities": [],
+    "mean_similarity": null,
+    "distances": [],
+    "mean_distance": null
+}

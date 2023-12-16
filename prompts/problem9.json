@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 9,
+            "base": "Construct a regular expression in JavaScript that validates an email address."
+        }
+    ]
+}

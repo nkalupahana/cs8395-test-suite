@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Develop a Swift function that returns the nth Fibonacci number.",
+    "base_response": "Here is an example of a Swift function that returns the nth Fibonacci number using recursion:",
+    "base_code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 1 {\n        return n\n    }\n    return fibonacci(n - 1) + fibonacci(n - 2)\n}\n\nlet n = 10\nlet result = fibonacci(n)\nprint(\"The \\(n)th Fibonacci number is: \\(result)\")",
+    "variation_responses": {
+        "Develop a Swift serve that returns the nth Fibonacci number .": {
+            "description": "To develop a Swift server that returns the nth Fibonacci number, follow these steps:\n\n1. Create a new Swift project using Xcode or your preferred development environment.\n\n2. Open the terminal and navigate to the project directory.\n\n3. Run the following command to create a new Swift package:",
+            "code": "shell\nswift package init --type executable"
+        },
+        "Can you tell me: Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Sure! Here's a Swift function that returns the nth Fibonacci number using recursion:",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    }\n    \n    return fibonacci(n - 1) + fibonacci(n - 2)\n}"
+        },
+        "Develop a Swift function that returns the nth Fibonacci number.": {
+            "description": "Here's a Swift function that calculates and returns the nth Fibonacci number using recursion:",
+            "code": "swift\nfunc fibonacci(_ n: Int) -> Int {\n    if n <= 0 {\n        return 0\n    } else if n == 1 {\n        return 1\n    } else {\n        return fibonacci(n - 1) + fibonacci(n - 2)\n    }\n}"
+        }
+    }
+}

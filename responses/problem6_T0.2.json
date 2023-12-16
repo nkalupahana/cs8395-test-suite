@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a C++ program to convert a binary number to a decimal number.",
+    "base_response": "Here is a C++ program that converts a binary number to a decimal number:",
+    "base_code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(int binary) {\n    int decimal = 0, base = 0;\n    \n    while (binary != 0) {\n        int rem = binary % 10;\n        decimal += rem * pow(2, base);\n        binary /= 10;\n        base++;\n    }\n    \n    return decimal;\n}\n\nint main() {\n    int binary;\n    cout << \"Enter a binary number: \";\n    cin >> binary;\n    \n    int decimal = binaryToDecimal(binary);\n    \n    cout << \"Decimal equivalent: \" << decimal << endl;\n    \n    return 0",
+    "variation_responses": {
+        "Write a C++ syllabus to convert a binary number to a decimal number .": {
+            "description": "Course Title: Binary to Decimal Conversion in C++\n\nCourse Duration: 4 weeks (20 hours)\n\nCourse Description:\nThis course is designed to provide students with a comprehensive understanding of binary to decimal conversion in C++. Students will learn the fundamental concepts and techniques required to convert binary numbers to decimal numbers using C++ programming language. The course will cover topics such as binary number representation, decimal number representation, conversion algorithms, and practical implementation of the conversion process.\n\nCourse Objectives:\nBy the end of this course, students will be able to:\n1. Understand the concepts of binary and decimal number systems.\n2. Implement binary to decimal conversion algorithms in C++.\n3. Write C++ programs to convert binary numbers to decimal numbers.\n4. Apply error handling",
+            "code": null
+        },
+        "Can you tell me: Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Sure! Here's a C++ program that converts a binary number to a decimal number:",
+            "code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(int binary) {\n    int decimal = 0, base = 0;\n    \n    while (binary != 0) {\n        int rem = binary % 10;\n        decimal += rem * pow(2, base);\n        binary /= 10;\n        base++;\n    }\n    \n    return decimal;\n}\n\nint main() {\n    int binary;\n    cout << \"Enter a binary number: \";\n    cin >> binary;\n    \n    int decimal = binaryToDecimal(binary);\n    cout << \"Decimal equivalent: \" << decimal << endl;\n    \n    return"
+        },
+        "Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Here is a C++ program that converts a binary number to a decimal number:\n\n\n\nIn this program, the `",
+            "code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(int binary) {\n    int decimal = 0, base = 0;\n    while (binary != 0) {\n        int rem = binary % 10;\n        decimal += rem * pow(2, base);\n        binary /= 10;\n        base++;\n    }\n    return decimal;\n}\n\nint main() {\n    int binary;\n    cout << \"Enter a binary number: \";\n    cin >> binary;\n    cout << \"Decimal equivalent: \" << binaryToDecimal(binary) << endl;\n    return 0;\n}"
+        }
+    }
+}

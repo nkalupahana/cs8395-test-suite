@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.",
+    "base_response": "SELECT DISTINCT status FROM Orders;",
+    "base_code": null,
+    "variation_responses": {
+        "Provide a SQL query to list all the unique values in a column named 'status ' from a hold over called 'Orders ' .": {
+            "description": "SELECT DISTINCT status \nFROM Orders",
+            "code": null
+        },
+        "Can you tell me: Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.": {
+            "description": "Sure! Here is a SQL query to list all the unique values in the 'status' column from the 'Orders' table:\n\n\n\nThis query will retrieve all distinct values from the 'status' column of the 'Orders' table.",
+            "code": "sql\nSELECT DISTINCT status FROM Orders;"
+        },
+        "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'.": {
+            "description": "SELECT DISTINCT status\nFROM Orders;",
+            "code": null
+        }
+    }
+}

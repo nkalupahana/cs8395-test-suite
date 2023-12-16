@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Implement a function in Go that checks if a string is an anagram of another string.",
+    "base_response": "Here's an example implementation of a function in Go that checks if a string is an anagram of another string:\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\nfunc isAnagram(str1, str2 string) bool {\n\t// Convert both strings to lower case and remove whitespaces\n\tstr1 = strings.ToLower(strings.ReplaceAll(str1, \" \", \"\"))\n\tstr2 = strings.ToLower(strings.ReplaceAll(str2, \" \", \"\"))\n\n\t// Check if the lengths of both strings are equal\n\tif len(str1) != len(str2) {\n\t\treturn false\n\t}\n\n\t// Convert the strings to slices of runes and sort them\n\tstr1Runes := []rune(str1)",
+    "base_code": null,
+    "variation_responses": {
+        "go through a function in Go that checks if a string is an anagram of another string .": {
+            "description": "Sure! Here's an example of a simple function in Go that checks if two strings are anagrams of each other:\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\nfunc isAnagram(str1, str2 string) bool {\n\t// Convert both strings to lowercase and remove whitespaces\n\tstr1 = strings.ToLower(strings.ReplaceAll(str1, \" \", \"\"))\n\tstr2 = strings.ToLower(strings.ReplaceAll(str2, \" \", \"\"))\n\n\t// Convert strings to slices of characters\n\tstr1Chars := strings.Split(str1, \"\")\n\tstr2Chars := strings.Split(str2, \"\")\n\n\t// Sort the character slices\n\tsort.Strings(str1Chars)\n\tsort.Strings(str2Chars)\n\n\t// Compare the sorted",
+            "code": null
+        },
+        "Can you tell me: Implement a function in Go that checks if a string is an anagram of another string.": {
+            "description": "Certainly! Here's an example implementation of a function in Go that checks if a string is an anagram of another string:\n\n```go\npackage main\n\nimport (\n\t\"sort\"\n\t\"strings\"\n)\n\n// Function to check if a string is an anagram of another string\nfunc isAnagram(str1 string, str2 string) bool {\n\t// Remove any whitespaces from both strings and convert them to lowercase\n\tstr1 = strings.ToLower(strings.ReplaceAll(str1, \" \", \"\"))\n\tstr2 = strings.ToLower(strings.ReplaceAll(str2, \" \", \"\"))\n\n\t// Convert the strings to a slice of characters\n\ts1 := strings.Split(str1, \"\")\n\ts2 := strings.Split(str2, \"\")\n\n\t// Sort the slices of characters",
+            "code": null
+        },
+        "Implement a function in Go that checks if a string is an anagram of another string.": {
+            "description": "Here is an example implementation of a function in Go that checks if a string is an anagram of another string:\n\n```go\npackage main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\n// Function to check if two strings are anagram\nfunc isAnagram(str1, str2 string) bool {\n\t// Convert strings to lowercase and remove whitespace\n\tstr1 = strings.ToLower(strings.ReplaceAll(str1, \" \", \"\"))\n\tstr2 = strings.ToLower(strings.ReplaceAll(str2, \" \", \"\"))\n\n\t// Convert strings to slices of characters\n\ts1 := strings.Split(str1, \"\")\n\ts2 := strings.Split(str2, \"\")\n\n\t// Sort the slices of characters\n\tsort.Strings(s1)\n\tsort.Strings(s2)",
+            "code": null
+        }
+    }
+}

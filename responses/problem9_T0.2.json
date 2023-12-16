@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Construct a regular expression in JavaScript that validates an email address.",
+    "base_response": "/^[\\w-]+(\\.[\\w-]+)*@([\\w-]+\\.)+[a-zA-Z]{2,7}$/",
+    "base_code": null,
+    "variation_responses": {
+        "conception a regular expression in JavaScript that validates an email address .": {
+            "description": "Here is a regular expression in JavaScript that can be used to validate an email address:\n\n\n\nExplanation of the regular expression:\n\n- `^` asserts the start of the string.\n- `[a-zA-Z0-9._%+-]+` matches one or more of any alphanumeric character, dot, underscore, percent, plus, or hyphen.\n- `@` matches the at symbol.\n- `[a-zA-Z0-9.-]+` matches one or more of any alphanumeric character, dot, or hyphen.\n- `\\.` matches a dot.\n- `[",
+            "code": "javascript\nconst emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/;"
+        },
+        "Can you tell me: Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "Sure! Here's a regular expression in JavaScript that can be used to validate an email address:\n\n\n\nExplanation of the regular expression:\n\n- `^` asserts the start of the string.\n- `[^\\s@]+` matches one or more characters that are not whitespace or `@`.\n- `@` matches the `@` symbol.\n- `[^\\s@]+` matches one or more characters that are not whitespace or `@`.\n- `\\.` matches the dot `.` symbol.\n- `[^\\s@]+` matches one or more characters that are not whitespace or `@`.\n- `$` asserts the end of",
+            "code": "javascript\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;"
+        },
+        "Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "/^[\\w-]+(\\.[\\w-]+)*@([\\w-]+\\.)+[a-zA-Z]{2,7}$/",
+            "code": null
+        }
+    }
+}

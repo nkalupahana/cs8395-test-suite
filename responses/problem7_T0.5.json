@@ -1,0 +1,19 @@
+{
+    "base_prompt": "In Ruby, write a method to check whether a string is a palindrome.",
+    "base_response": "Here's a simple method in Ruby to check whether a string is a palindrome:\n\n\n\nThis method takes a string as an argument and returns `true` if the string is a palindrome, and `false` otherwise. It uses the `reverse` method to reverse the string and then compares it to the original string. If they are equal, it means the string is a palindrome.",
+    "base_code": "ruby\ndef palindrome?(string)\n  string == string.reverse\nend",
+    "variation_responses": {
+        "In Ruby , write a method to check whether a string is a palindrome .": {
+            "description": "Here's an example of a method in Ruby that checks whether a string is a palindrome:\n\n\n\nYou can use this method by calling `palindrome?(\"string\")`, where `\"string\"` is the string you want to check. It will return `true` if the string is a palindrome and `false` otherwise.",
+            "code": "ruby\ndef palindrome?(string)\n  # Remove any non-alphanumeric characters and convert to lowercase\n  cleaned_string = string.downcase.gsub(/[^a-z0-9]/, '')\n  \n  # Check if the cleaned string is equal to its reverse\n  cleaned_string == cleaned_string.reverse\nend"
+        },
+        "Can you tell me: In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Sure! Here's a simple method in Ruby to check whether a string is a palindrome:\n\n\n\nYou can use this method to check whether a given string is a palindrome. For example:\n\n\n\nThe method first removes any non-alphanumeric",
+            "code": "ruby\nputs palindrome?('level')      # true\nputs palindrome?('Hello')      # false\nputs palindrome?('A man, a plan, a canal, Panama!')   # true"
+        },
+        "In Ruby, write a method to check whether a string is a palindrome.": {
+            "description": "Here is an example of a method to check whether a string is a palindrome in Ruby:\n\n\n\nTo use this method, you can call it and pass a string as an argument:\n\n\n\nThe `palindrome?` method first removes any non",
+            "code": "ruby\nputs palindrome?(\"racecar\")  # true\nputs palindrome?(\"hello\")    # false\nputs palindrome?(\"A man, a plan, a canal: Panama\")  # true"
+        }
+    }
+}

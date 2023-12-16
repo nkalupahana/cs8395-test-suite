@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Construct a regular expression in JavaScript that validates an email address.",
+    "base_response": "Here is a regular expression in JavaScript that can be used to validate an email address:",
+    "base_code": "javascript\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;",
+    "variation_responses": {
+        "retrace a regular expression in JavaScript that validates an email address .": {
+            "description": "A regular expression in JavaScript that validates an email address can be retraced as follows:",
+            "code": "javascript\n/^[\\w.-]+@[\\w.-]+\\.[a-zA-Z]{2,}$/;"
+        },
+        "Can you tell me: Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "Sure! Here's a regular expression in JavaScript that can be used to validate an email address:",
+            "code": "javascript\nconst emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n\n// Example usage:\nconst email1 = \"example@example.com\";\nconst email2 = \"invalid email\";\nconsole.log(emailRegex.test(email1)); // Output: true\nconsole.log(emailRegex.test(email2)); // Output: false"
+        },
+        "Construct a regular expression in JavaScript that validates an email address.": {
+            "description": "There are many different regular expressions that can be used to validate an email address, but here is one commonly used expression that can be used in JavaScript:",
+            "code": "javascript\n/^[\\w-]+(\\.[\\w-]+)*@([\\w-]+\\.)+[a-zA-Z]{2,7}$/"
+        }
+    }
+}

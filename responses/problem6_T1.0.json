@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a C++ program to convert a binary number to a decimal number.",
+    "base_response": "Here is a C++ code that converts a binary number to a decimal number:",
+    "base_code": "c++\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(int binaryNumber) {\n    int decimalNumber = 0, i = 0, remainder;\n    while (binaryNumber > 0) {\n        remainder = binaryNumber % 10;\n        decimalNumber += remainder * pow(2, i);\n        binaryNumber /= 10;\n        i++;\n    }\n    return decimalNumber;\n}\n\nint main() {\n    int binaryNumber;\n    cout << \"Enter a binary number: \";\n    cin >> binaryNumber;\n    cout << \"Decimal Number: \" << binaryToDecimal(binaryNumber) << endl;\n    return",
+    "variation_responses": {
+        "Write a C++ course of study to convert a binary number to a decimal number .": {
+            "description": "Course Title: Binary to Decimal Converter using C++\n\nCourse Duration: 5 sessions (1 session: 1 hour)\n\nSession Topics and Objectives:\n\nSession 1: Introduction to Binary and Decimal Systems\n- Understanding the binary number system (base 2) and the decimal number system (base 10)\n- Identifying the differences and similarities between binary and decimal representations\n- Understanding the concept of positional notation in base systems\n\nSession 2: Basic C++ Programming Concepts\n- Introduction to C++ programming language\n- Understanding data types, variables, and constants in C++\n- Basic arithmetic operations in C++\n\nSession 3: Conversion Methodology\n- Overview of the conversion process from binary to decimal\n- Introduction to the division-by-2",
+            "code": null
+        },
+        "Can you tell me: Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Sure! Here's an example of a C++ program that converts a binary number to a decimal number:",
+            "code": "cpp\n#include <iostream>\n#include <cmath> // for pow() function\n\nint binaryToDecimal(int binaryNumber) {\n    int decimalNumber = 0, power = 0;\n    \n    while(binaryNumber != 0) {\n        int remainder = binaryNumber % 10;\n        binaryNumber /= 10;\n        decimalNumber += remainder * pow(2, power);\n        power++;\n    }\n    \n    return decimalNumber;\n}\n\nint main() {\n    int binaryNum;\n    std::cout << \"Enter a binary number: \";\n    std::cin >> binaryNum;\n    \n    int decimalNum = binaryToDecimal(binary"
+        },
+        "Write a C++ program to convert a binary number to a decimal number.": {
+            "description": "Sure! Here's a C++ program that converts a binary number to a decimal number:\n\n\n\nIn",
+            "code": "cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nint binaryToDecimal(long long binary) {\n    int decimal = 0, i = 0, remainder;\n    while (binary != 0) {\n        remainder = binary % 10;\n        binary /= 10;\n        decimal += remainder * pow(2, i);\n        ++i;\n    }\n    return decimal;\n}\n\nint main() {\n    long long binary;\n    cout << \"Enter a binary number: \";\n    cin >> binary;\n    cout << \"Decimal: \" << binaryToDecimal(binary) << endl;\n    return 0;\n}"
+        }
+    }
+}

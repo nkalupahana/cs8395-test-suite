@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Design a SQL query to find the second highest salary from a table named 'Employees'.",
+    "base_response": "To find the second-highest salary from the 'Employees' table, you can use the following SQL query:",
+    "base_code": "sql\nSELECT MAX(salary) \nFROM Employees \nWHERE salary < (SELECT MAX(salary) FROM Employees)",
+    "variation_responses": {
+        "Design a SQL interrogation to find the second highest salary from a table named 'Employees ' .": {
+            "description": "You can use the following SQL query to find the second highest salary from the 'Employees' table:",
+            "code": "sql\nSELECT MAX(Salary) AS SecondHighestSalary\nFROM Employees\nWHERE Salary < (SELECT MAX(Salary) FROM Employees);"
+        },
+        "Can you tell me: Design a SQL query to find the second highest salary from a table named 'Employees'.": {
+            "description": "Sure! Here's a SQL query to find the second highest salary from the 'Employees' table:",
+            "code": "sql\nSELECT salary\nFROM Employees\nWHERE salary < (\n    SELECT MAX(salary)\n    FROM Employees\n)\nORDER BY salary DESC\nLIMIT 1;"
+        },
+        "Design a SQL query to find the second highest salary from a table named 'Employees'.": {
+            "description": "To find the second-highest salary from the 'Employees' table, you can use the following SQL query:",
+            "code": "SELECT MAX(Salary) FROM Employees\nWHERE Salary < (SELECT MAX(Salary) FROM Employees);"
+        }
+    }
+}

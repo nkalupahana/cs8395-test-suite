@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 13,
+            "base": "Implement a function in Go that checks if a string is an anagram of another string."
+        }
+    ]
+}

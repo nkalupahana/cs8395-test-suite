@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Demonstrate how to sort a dictionary by value in Python.",
+    "base_response": "To sort a dictionary by its values in Python, you can use the `sorted()` function with the `items()` method of the dictionary. Here's a step-by-step demonstration:\n\n\n\nOutput:\n\n\nIn the code above, we",
+    "base_code": "grape 1\nbanana 2\napple 5\norange 10",
+    "variation_responses": {
+        "Demonstrate how to sort a dictionary by rate in Python .": {
+            "description": "To sort a dictionary by rate in Python, you can use the `sorted()` function along with a lambda function as the `key` parameter. Here's an example:\n\n\n\nOutput",
+            "code": "python\n# Dictionary with rates\nrates = {\n    'item1': 4.5,\n    'item2': 3.2,\n    'item3': 4.8,\n    'item4': 2.7,\n    'item5': 4.1\n}\n\n# Sort the dictionary by rate in descending order\nsorted_rates = dict(sorted(rates.items(), key=lambda x: x[1], reverse=True))\n\n# Print the sorted dictionary\nfor item, rate in sorted_rates.items():\n    print(item, rate)"
+        },
+        "Can you tell me: Demonstrate how to sort a dictionary by value in Python.": {
+            "description": "Certainly! Here's an example of how to sort a dictionary by its values in Python:\n\n\n\nOutput:\n\n\nIn the code above, we use the `sorted()` function to sort the dictionary items based on their values. The `key` parameter",
+            "code": "kiwi 1\nbanana 2\napple 5\norange 8"
+        },
+        "Demonstrate how to sort a dictionary by value in Python.": {
+            "description": "To sort a dictionary by its values in Python, you can use the `sorted()` function along with a lambda function as the `key` parameter. Here's a step-by-step demonstration:\n\n\n\nOutput:\n\n\nExplanation:\n1.",
+            "code": "date 1\nbanana 2\napple 5\ncherry 8"
+        }
+    }
+}

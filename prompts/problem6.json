@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 6,
+            "base": "Write a C++ program to convert a binary number to a decimal number."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "prompt": "Demonstrate how to sort a dictionary by value in Python.",
+    "similarities": [
+        0.0,
+        0.2222222222222222,
+        0.2222222222222222
+    ],
+    "mean_similarity": 0.14814814814814814,
+    "distances": [
+        31,
+        29,
+        20
+    ],
+    "mean_distance": 26.666666666666668
+}

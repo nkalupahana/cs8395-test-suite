@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Write a C# method that reverses a string without using built-in functions.",
+    "base_response": "Here's a C# method that reverses a string without using built-in functions:",
+    "base_code": "csharp\npublic static string ReverseString(string str)\n{\n    char[] charArray = str.ToCharArray(); // Convert string to char array\n\n    int start = 0;\n    int end = str.Length - 1;\n\n    // Swap characters from start and end pointers until they meet\n    while (start < end)\n    {\n        // Swap characters\n        char temp = charArray[start];\n        charArray[start] = charArray[end];\n        charArray[end] = temp;\n\n        // Move pointers\n        start++;\n        end--;\n    }\n\n    return new string(charArray); // Convert char array back to string\n}",
+    "variation_responses": {
+        "Write a C # method that reverses a string without using built-in functions .": {
+            "description": "Here's an example of a C# method that reverses a string without using built-in functions:",
+            "code": "csharp\npublic static string ReverseString(string input)\n{\n    char[] characters = input.ToCharArray();\n    int left = 0;\n    int right = characters.Length - 1;\n    \n    while (left < right)\n    {\n        char temp = characters[left];\n        characters[left] = characters[right];\n        characters[right] = temp;\n        \n        left++;\n        right--;\n    }\n    \n    return new string(characters);\n}"
+        },
+        "Can you tell me: Write a C# method that reverses a string without using built-in functions.": {
+            "description": "Sure! Here's a C# method that reverses a string without using built-in functions:",
+            "code": "csharp\npublic static string ReverseString(string input)\n{\n    char[] charArray = input.ToCharArray();\n    int leftIndex = 0;\n    int rightIndex = input.Length - 1;\n\n    while (leftIndex < rightIndex)\n    {\n        // Swap characters at left and right indices\n        char temp = charArray[leftIndex];\n        charArray[leftIndex] = charArray[rightIndex];\n        charArray[rightIndex] = temp;\n\n        // Move the indices towards the center\n        leftIndex++;\n        rightIndex--;\n    }\n\n    return new string(charArray);\n}"
+        },
+        "Write a C# method that reverses a string without using built-in functions.": {
+            "description": "Here's a C# method that reverses a string without using built-in functions:",
+            "code": "csharp\npublic static string ReverseString(string input)\n{\n    char[] characters = input.ToCharArray();\n    int left = 0;\n    int right = characters.Length - 1;\n\n    while (left < right)\n    {\n        // Swap characters\n        char temp = characters[left];\n        characters[left] = characters[right];\n        characters[right] = temp;\n\n        // Move towards the middle\n        left++;\n        right--;\n    }\n\n    return new string(characters);\n}"
+        }
+    }
+}

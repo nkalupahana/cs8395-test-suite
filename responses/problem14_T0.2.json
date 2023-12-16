@@ -1,0 +1,19 @@
+{
+    "base_prompt": "Create a Rust program to calculate the greatest common divisor (GCD) of two numbers.",
+    "base_response": "Sure! Here's a Rust program that calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm:\n\n\n\nIn this program, we define a function `gcd` that takes two unsigned 32-bit integers `a` and `b` as parameters",
+    "base_code": "rust\nfn gcd(a: u32, b: u32) -> u32 {\n    if b == 0 {\n        return a;\n    }\n    gcd(b, a % b)\n}\n\nfn main() {\n    let num1 = 24;\n    let num2 = 36;\n\n    let result = gcd(num1, num2);\n\n    println!(\"The GCD of {} and {} is: {}\", num1, num2, result);\n}",
+    "variation_responses": {
+        "Create a Rust political program to calculate the greatest common divisor ( GCD ) of two numbers .": {
+            "description": "Here's a Rust program that calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm:",
+            "code": "rust\nfn gcd(a: u32, b: u32) -> u32 {\n    if b == 0 {\n        return a;\n    }\n    gcd(b, a % b)\n}\n\nfn main() {\n    println!(\"Enter two numbers:\");\n    let mut input = String::new();\n    std::io::stdin().read_line(&mut input).expect(\"Failed to read input\");\n\n    let numbers: Vec<u32> = input\n        .split_whitespace()\n        .map(|num| num.parse().expect(\"Invalid input\"))\n        .collect();\n\n    if numbers.len() != 2 {\n        panic"
+        },
+        "Can you tell me: Create a Rust program to calculate the greatest common divisor (GCD) of two numbers.": {
+            "description": "Sure! Here's a Rust program that calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm:\n\n\n\nIn this program, we define a function `gcd` that takes two unsigned 32",
+            "code": "rust\nfn gcd(mut a: u32, mut b: u32) -> u32 {\n    while b != 0 {\n        let temp = b;\n        b = a % b;\n        a = temp;\n    }\n    a\n}\n\nfn main() {\n    let num1 = 24;\n    let num2 = 36;\n    let result = gcd(num1, num2);\n    println!(\"The GCD of {} and {} is: {}\", num1, num2, result);\n}"
+        },
+        "Create a Rust program to calculate the greatest common divisor (GCD) of two numbers.": {
+            "description": "Here's a Rust program that calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm:\n\n\n\nIn this program, we define a recursive function `gcd` that takes two unsigned 32-bit integers `a` and `b`. If `b",
+            "code": "rust\nfn gcd(a: u32, b: u32) -> u32 {\n    if b == 0 {\n        return a;\n    }\n    gcd(b, a % b)\n}\n\nfn main() {\n    let num1 = 24;\n    let num2 = 36;\n    let result = gcd(num1, num2);\n    println!(\"The GCD of {} and {} is: {}\", num1, num2, result);\n}"
+        }
+    }
+}

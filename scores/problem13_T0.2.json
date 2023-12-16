@@ -1,0 +1,15 @@
+{
+    "prompt": "Implement a function in Go that checks if a string is an anagram of another string.",
+    "similarities": [
+        0.5,
+        0.5434782608695652,
+        0.8536585365853658
+    ],
+    "mean_similarity": 0.632378932484977,
+    "distances": [
+        183,
+        171,
+        30
+    ],
+    "mean_distance": 128.0
+}

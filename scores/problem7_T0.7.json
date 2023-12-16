@@ -1,0 +1,15 @@
+{
+    "prompt": "In Ruby, write a method to check whether a string is a palindrome.",
+    "similarities": [
+        0.7142857142857143,
+        0.9166666666666666,
+        0.05714285714285716
+    ],
+    "mean_similarity": 0.5626984126984127,
+    "distances": [
+        91,
+        24,
+        173
+    ],
+    "mean_distance": 96.0
+}

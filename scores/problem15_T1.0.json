@@ -1,0 +1,15 @@
+{
+    "prompt": "Design a SQL query to find the second highest salary from a table named 'Employees'.",
+    "similarities": [
+        0.8888888888888888,
+        0.7,
+        0.75
+    ],
+    "mean_similarity": 0.7796296296296296,
+    "distances": [
+        15,
+        12,
+        23
+    ],
+    "mean_distance": 16.666666666666668
+}

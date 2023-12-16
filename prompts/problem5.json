@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 5,
+            "base": "Provide a SQL query to list all the unique values in a column named 'status' from a table called 'Orders'."
+        }
+    ]
+}

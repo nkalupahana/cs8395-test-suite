@@ -1,0 +1,8 @@
+{
+    "prompts": [
+        {
+            "id": 10,
+            "base": "Write a Python script to merge two sorted lists into a new sorted list."
+        }
+    ]
+}
