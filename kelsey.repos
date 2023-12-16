@@ -1,0 +1,6 @@
+repositories:
+  chat-gpt-find-first-error:
+    type: git
+    url: https://github.com/RajayPreddie/cs8395-test-chat-gpt-in-finding-first-error
+    version: main
+  
