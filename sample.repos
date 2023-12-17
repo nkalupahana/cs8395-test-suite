@@ -1,9 +1,0 @@
-repositories:
-  code-coverage:
-    type: git
-    url: https://github.com/nkalupahana/cs8395-code-coverage.git
-    version: main
-  demo:
-    type: git
-    url: https://github.com/nkalupahana/cs8395-code-coverage.git
-    version: demo

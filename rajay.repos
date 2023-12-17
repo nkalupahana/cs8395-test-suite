@@ -1,0 +1,6 @@
+repositories:
+  chat-gpt-readability-and-maintainability:
+    type: git
+    url: https://github.com/RajayPreddie/cs8395-chatgpt-readability-maintainability-test
+    version: main
+  
